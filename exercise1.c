@@ -1,3 +1,0 @@
-/*
-Un error semántico es
-*/
