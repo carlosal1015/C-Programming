@@ -2,8 +2,7 @@ Lenguaje de Programación C - Nivel Básico
 ===
 
 <p align="center">
-  <href="https://www.facebook.com/centrotecnologiasuni/photos/a.937222362988356.1073741830.903421356368457/1830779336965983/?type=3&theater">
-  <img src="https://github.com/carlosal1015/C-Programming/blob/master/images/ctic.jpg" width="750">
+  <img src="https://github.com/carlosal1015/C-Programming/blob/master/images/ctic.jpg" width="750" href="https://www.facebook.com/centrotecnologiasuni/photos/a.937222362988356.1073741830.903421356368457/1830779336965983/?type=3&theater">
 </p>
 
 
