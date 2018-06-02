@@ -2,7 +2,7 @@ Lenguaje de Programación C - Nivel Básico
 ===
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/RoadtoGSoC2018/blob/master/images/gsoc2018.png" width="750">
+  <img src="https://github.com/carlosal1015/C-Programming/blob/master/images/ctic.jpg" width="750">
 </p>
 
 
