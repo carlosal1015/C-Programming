@@ -6,15 +6,15 @@ Lenguaje de Programación C - Nivel Básico
 </p>
 
 
-Instructor: [MSc. César Manuel Sebastián Díez Chirinos](http://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do;jsessionid=fd6624fe7d9f148aabe8445c1992?id_investigador=24012)
+**Instructor**: [MSc. César Manuel Sebastián Díez Chirinos](http://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do;jsessionid=fd6624fe7d9f148aabe8445c1992?id_investigador=24012)
 
-E-mail: [cdiezch@uni.edu.pe](mailto:cdiezch@uni.edu.pe)
+**E-mail**: [cdiezch@uni.edu.pe](mailto:cdiezch@uni.edu.pe)
 
-Aula: Laboratorio N°4 del [Centro de Tecnologías de la Información y Comunicaciones](http://www.ctic.uni.edu.pe/) de la [Universidad Nacional de Ingeniería](http://www.uni.edu.pe/).
+**Aula**: Laboratorio N°4 del [Centro de Tecnologías de la Información y Comunicaciones](http://www.ctic.uni.edu.pe/) de la [Universidad Nacional de Ingeniería](http://www.uni.edu.pe/).
 
-Horario: Los días viernes desde las 10:30 hrs hasta 13:00 hrs.
+**Horario**: Los días viernes desde las 10:30 hrs hasta 13:00 hrs.
 
-Requisito mínimo: 80% de asistencia.
+Requisito mínimo para no ser penalizado: *80% de asistencia* de las clases totales.
 
 ## Cronograma de clases
 
