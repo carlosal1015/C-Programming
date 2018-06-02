@@ -2,7 +2,7 @@ Lenguaje de Programación C - Nivel Básico
 ===
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/C-Programming/blob/master/images/ctic.jpg" width="750" href="https://www.facebook.com/centrotecnologiasuni/photos/a.937222362988356.1073741830.903421356368457/1830779336965983/?type=3&theater">
+  <img src="https://github.com/carlosal1015/C-Programming/blob/master/images/ctic.jpg" width="750">
 </p>
 
 
@@ -20,7 +20,7 @@ Requisito mínimo para no ser penalizado: *80% de asistencia* de las clases tota
 
 |   Sesión  |   Fecha   |   Temas   |
 |:---------:|:---------:|:---------:|
-| 1 | 01/06/2018 | Historia de C y las 7 partes de un programa. |
+| 1 | 01/06/2018 | [Historia de C y las 7 partes de un programa](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/First). |
 | 2 | 08/06/2018 | |
 | 3 | 15/06/2018 | |
 | 4 | 22/06/2018 | |
