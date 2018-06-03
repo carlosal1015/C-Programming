@@ -201,4 +201,141 @@ La moraleja es que debes desarrollar el hábito de planificar antes de codificar
 
 #### Mecánica de programación
 
-Los pasos exactos que debe seguir para producir un programa dependen del entorno de su computadora. Como C es portátil, está disponible en muchos entornos, incluidos Unix, Linux, MS-DOS (sí, algunas personas todavía lo usan), Windows y Macintosh OS. No hay suficiente espacio en este libro para cubrir todos los entornos, particularmente porque los productos particulares evolucionan, mueren y son reemplazados. En primer lugar, sin embargo, veamos algunos aspectos compartidos por muchos entornos C, incluidos los cinco que acabamos de mencionar. Realmente no necesita saber lo que sigue para ejecutar un programa C, pero es bueno. También puede ayudarlo a comprender por qué debe seguir algunos pasos particulares para obtener un programa C. Cuando escribe un programa en el lenguaje C, almacena lo que escribe en un archivo de texto llamado archivo de código fuente. La mayoría de los sistemas C, incluidos los que mencionamos, requieren que el nombre de
+Los pasos exactos que debe seguir para producir un programa dependen del entorno de su computadora. Como C es portátil, está disponible en muchos entornos, incluidos Unix, Linux, MS-DOS (sí, algunas personas todavía lo usan), Windows y Macintosh OS. No hay suficiente espacio en este libro para cubrir todos los entornos, particularmente porque los productos particulares evolucionan, mueren y son reemplazados. En primer lugar, sin embargo, veamos algunos aspectos compartidos por muchos entornos C, incluidos los cinco que acabamos de mencionar. Realmente no necesita saber lo que sigue para ejecutar un programa C, pero es bueno. También puede ayudarlo a comprender por qué debe seguir algunos pasos particulares para obtener un programa C. Cuando escribe un programa en el lenguaje C, almacena lo que escribe en un archivo de texto llamado archivo de código fuente. La mayoría de los sistemas C, incluidos los que mencionamos, requieren que el nombre del archivo termine en `.c` (por ejemplo, `wordcount.c` y `budget.c`). La parte del nombre antes del punto se denomina *nombre base*, y la parte posterior al punto se denomina *extensión*. Por lo tanto, `budget` es el nombre base y `c` es la extensión. La combinación `budget.c` es el nombre del archivo. El nombre también debe satisfacer los requisitos del sistema operativo de la computadora en particular. Por ejemplo, MS-DOS es un sistema operativo anterior para PC y clones de IBM. Requiere que el nombre base no tenga más de ocho caracteres, por lo que el nombre de archivo `wordcount.c` mencionado anteriormente no sería un nombre de archivo de DOS válido. Algunos sistemas Unix colocan un límite de 14 caracteres en el nombre completo, incluida la extensión; otros sistemas Unix permiten nombres más largos, hasta 255 caracteres. Linux, Windows y Macintosh OS también permiten nombres largos.
+
+Para que tengamos algo concreto para referirnos, supongamos que tenemos un archivo fuente llamado `concrete.c` que contiene el código fuente C:
+
+```c
+#include <stdio.h>
+int main(void)
+{
+    printf("Concrete contains gravel and cement.\n");
+    return 0;
+}
+```
+
+No se preocupe por los detalles del archivo de código fuente que se muestra; aprenderás sobre ellos en el Capítulo 2.
+
+#### Archivos de código objeto, archivos ejecutables y bibliotecas
+
+La estrategia básica en la programación en C es usar programas que conviertan su archivo de código fuente en un archivo ejecutable, que es un archivo que contiene el código de lenguaje máquina listo para ejecutar. Las implementaciones C normalmente hacen esto en dos pasos: compilar y vincular. El compilador convierte su código fuente en un código intermedio, y el enlazador combina esto con otro código para producir el archivo ejecutable. C usa este enfoque de dos partes para facilitar la modularización de programas. Puede compilar módulos individuales por separado y luego usar el enlazador para combinar los módulos compilados más tarde. De esta forma, si necesita cambiar un módulo, no tiene que volver a compilar los otros. Además, el enlazador combina su programa con el código de la biblioteca precompilada.
+
+Hay varias opciones para la forma de los archivos intermedios. La opción más prevalente, y la que adoptan las implementaciones que se describen aquí, es convertir el código fuente en código de lenguaje de máquina, colocando el resultado en un archivo de código de objeto, o un archivo de objeto, para abreviar. (Esto supone que el código fuente consta de un solo archivo). Aunque el archivo de objeto contiene el código de idioma de la máquina, no está listo para ejecutarse. El archivo objeto contiene la traducción de su código fuente, pero aún no es un programa completo.
+
+El primer elemento que falta en el archivo de código objeto es algo llamado código de inicio, que es un código que actúa como una interfaz entre su programa y el sistema operativo. Por ejemplo, puede ejecutar una PC de IBM compatible bajo MS Windows o bajo Linux. El hardware es el mismo en ambos casos, por lo que el mismo código de objeto funcionaría con ambos, pero necesitaría un código de inicio diferente para Windows que el que tendría para Linux, ya que estos sistemas manejan los programas de forma diferente unos de otros.
+
+El segundo elemento que falta es el código para las rutinas de la biblioteca. Casi todos los programas C hacen uso de rutinas (llamadas *funciones*) que son parte de la biblioteca C estándar. Por ejemplo, `concrete.c` usa la función `printf()`. El archivo de código objeto no contiene el código para esta función; simplemente contiene instrucciones para usar la función `printf()`. El código real se almacena en otro archivo, llamado biblioteca. Un archivo de biblioteca contiene código de objeto para muchas funciones
+
+En resumen, **un archivo de objeto y un archivo ejecutable consisten en instrucciones de lenguaje máquina**. Sin embargo, el archivo de objeto contiene la traducción del lenguaje de máquina solo para el código que usó, pero el archivo ejecutable también tiene código de máquina para las rutinas de biblioteca que usa y para el código de inicio.
+
+En algunos sistemas, debe ejecutar los programas de compilación y enlace por separado. En otros sistemas, el compilador inicia el enlazador automáticamente, por lo que solo debe dar el comando de compilación.
+
+Ahora veamos algunos sistemas específicos.
+
+#### Sistemas Unix
+
+Debido a que la popularidad y existencia de C comenzó en los sistemas Unix, comenzaremos allí. (Nota: en "Unix", incluimos sistemas como FreeBSD, que desciende de Unix pero no puede usar el nombre por razones legales).
+
+##### Edición en un sistema Unix
+
+Unix C no tiene su propio editor. En su lugar, utiliza uno de los editores de Unix de uso general, como emacs, jove, vi o un editor de texto del sistema X Window.
+
+Sus dos responsabilidades principales son escribir el programa correctamente y elegir un nombre para el archivo que almacenará el programa. Como se discutió, el nombre debe terminar con `.c`. Tenga en cuenta que Unix distingue entre mayúsculas y minúsculas. Por lo tanto, `budget.c`, `BUDGET.c` y `Budget.c` son tres nombres distintos y válidos para los archivos fuente C, pero `BUDGET.C` no es un nombre válido porque usa una C mayúscula en lugar de una c minúscula. Usando el editor vi, preparamos el siguiente programa y lo almacenamos en un archivo llamado `inform.c`
+
+```c
+#include <stdio.h>
+int main(void)
+{
+    printf("A .c is used to end a C program filename.\n");
+    return 0;
+}
+```
+
+Este texto es el código fuente e `inform.c` es el archivo fuente. El punto importante aquí es que el archivo fuente es el comienzo de un proceso, no el final.
+
+#### Compilando en un sistema Unix
+
+Nuestro programa, aunque innegablemente brillante, sigue siendo un galimatías en una computadora. Una computadora no entiende cosas como `#include` e `printf`. (En este punto, probablemente usted tampoco, pero pronto aprenderá, mientras que la computadora no). Como discutimos anteriormente, necesitamos la ayuda de un compilador para traducir nuestro código (código fuente) al código de la computadora (codigo de maquina). El resultado de estos esfuerzos será el archivo ejecutable, que contiene todo el código de máquina que la computadora necesita para realizar el trabajo.
+
+Históricamente, el compilador de Unix C, invocado con el comando cc, definía el lenguaje. Pero no se mantuvo al ritmo del estándar en desarrollo, y se ha retirado. Sin embargo, los sistemas Unix suelen proporcionar un compilador de C de alguna otra fuente y luego hacen que el comando `cc` sea alias para ese compilador. Por lo tanto, puede continuar con el mismo comando, aunque pueda invocar compiladores diferentes en sistemas diferentes.
+
+Para compilar el programa `inform.c`, escriba lo siguiente:
+
+```bash
+cc inform.c
+```
+Después de un momento, el mensaje de Unix volverá, indicándote que la acción está completa. Es posible que reciba advertencias y mensajes de error si no pudo escribir el programa correctamente, pero supongamos que lo hizo todo bien. (Si el compilador se queja de la palabra `void`, su sistema aún no se ha actualizado a un compilador ANSI C. Pronto hablaremos más sobre estándares. Mientras tanto, simplemente elimine la palabra `void` del ejemplo.) Si usa el comando `ls` para liste sus archivos, encontrará que hay un nuevo archivo llamado `a.out`. Este es el archivo ejecutable que contiene la traducción (o compilación) del programa. Para ejecutarlo, simplemente escriba
+
+```bash
+a.out
+```
+
+y la sabiduría se derrama:
+
+```bash
+A .c is used to end a C program filename.
+```
+
+Si desea mantener el archivo ejecutable (`a.out`), debe cambiarle el nombre. De lo contrario, el archivo se reemplaza por uno nuevo la próxima vez que compile un programa.
+
+¿Qué pasa con el código objeto? El compilador de `cc` crea un archivo de código de objeto que tiene el mismo nombre base que el código fuente, pero con una extensión `.o`. En nuestro ejemplo, el archivo de código de objeto se llama `inform.o`, pero no lo encontrará, porque el enlazador lo elimina una vez que se ha completado el programa ejecutable. Sin embargo, si el programa original usó más de un archivo de código fuente, los archivos de código objeto se guardarían. Cuando analicemos varios archivos de programas más adelante en el texto, verá que esta es una buena idea
+
+#### La colección de compiladores GNU y la infraestructura del compilador LLVM
+
+El Proyecto GNU, que data de 1987, es una colaboración masiva que ha desarrollado una gran cantidad de software gratuito similar a Unix. (GNU significa "GNU's Not Unix.") Uno de sus productos es GNU Compiler Collection, o GCC, que incluye el compilador C de GCC. GCC está en constante desarrollo, guiado por un comité de dirección, y su compilador de C sigue de cerca los cambios en los estándares de C. Las versiones de GCC están disponibles para una amplia variedad de plataformas de hardware y sistemas operativos, incluidos Unix, Linux y Windows. El compilador C de GCC se puede invocar con el comando gcc. Y muchos sistemas que usan gcc harán que cc sea un alias para gcc. El proyecto LLVM proporciona un segundo reemplazo para cc. El proyecto es una colección de fuente abierta de software relacionado con el compilador que data de un proyecto de investigación de 2000 en la Universidad de Illinois. Su compilador Clang procesa el código C y puede invocarse como clang. Disponible en varias plataformas, incluyendo Linux, Clang se convirtió en el compilador de C predeterminado para FreeBSD a finales de 2012. Al igual que GCC, Clang rastrea bastante bien el estándar C.
+
+Ambos aceptan una opción `-v` para obtener información de la versión, por lo que en los sistemas que usan el alias `cc` para el comando `gcc` o `clang`, la combinación
+
+```bash
+cc -v
+```
+
+muestra qué compilador y qué versión está utilizando.
+
+Tanto los comandos `gcc` como `clang`, según la versión, pueden requerir opciones de tiempo de ejecución para invocar estándares C más recientes:
+
+```bash
+gcc -std=c99 inform.c
+gcc -std=c1x inform.c
+gcc -std=c11 inform.c
+```
+
+El primer ejemplo invoca el estándar C99, el segundo invoca el borrador del estándar C11 para las versiones GCC antes de la aceptación del estándar, y el tercero invoca el estándar C11 para las versiones GCC que siguieron a la aceptación. El compilador Clang usa las mismas banderas.
+
+#### Sistemas Linux
+
+Linux es un popular sistema operativo de código abierto parecido a Unix que se ejecuta en una variedad de plataformas, incluidas PC y Mac. La preparación de los programas C en Linux es muy similar a la de los sistemas Unix, excepto que se usaría el compilador C de dominio público de GCC provisto por GNU. El comando de compilación se ve así
+
+```bash
+gcc inform.c
+```
+
+Tenga en cuenta que la instalación de GCC puede ser opcional al instalar Linux, por lo que usted (o alguien) podría tener que instalar GCC si no se instaló anteriormente. Por lo general, la instalación hace que `cc` sea un alias para `gcc`, por lo que puede usar cc en la línea de comandos en lugar de gcc si lo desea.
+
+Puede obtener más información sobre GCC, incluida información sobre nuevos lanzamientos en http://www.gnu.org/software/gcc/index.html.
+
+#### Compiladores Línea de comando para PC
+
+Los compiladores de C no son parte del paquete estándar de Windows, por lo que es posible que necesite obtener e instalar un compilador de C. Cygwin y MinGW son descargas gratuitas que hacen que el compilador de GCC esté disponible para el uso de la línea de comandos en una PC. Cygwin se ejecuta en su propia ventana, que tiene un aspecto Command-Prompt pero que imita un entorno de línea de comandos de Linux. MinGW, por otro lado, se ejecuta en el modo de comando de Windows. Estos vienen con la versión más nueva (o la más reciente) de GCC, que admite C99 y al menos algo de C11. El Borland C++ Compiler 5.5 es otra descarga gratuita; es compatible con C90.
+
+Los archivos de código fuente deben ser archivos de texto plano, no archivos de procesador de palabras. (Los archivos del procesador de textos contienen mucha información adicional sobre las fuentes y el formato). Debería usar un editor de texto, como el Bloc de notas de Windows. Puede usar un procesador de textos si usa la función *Guardar como* para guardar el archivo en modo texto. El archivo debe tener una extensión `.c`. Algunos procesadores de texto agregan automáticamente una extensión `.txt` a los archivos de texto. Si esto le sucede, debe cambiar el nombre del archivo, reemplazando el texto con `c`.
+
+Los compiladores de C para PC generalmente producen, pero no siempre, archivos de código de objeto intermedio que tienen una extensión .obj. A diferencia de los compiladores de Unix, estos compiladores generalmente no eliminan estos archivos cuando terminan. Algunos compiladores producen archivos en lenguaje ensamblador con extensiones `.asm` o usan algún formato especial propio. Algunos compiladores ejecutan el enlazador automáticamente después de compilar; otros pueden requerir que ejecute el enlazador manualmente. Vinculación de resultados en el archivo ejecutable, que agrega la extensión `.EXE` al nombre base del código fuente original. Por ejemplo, compilar y vincular un archivo de código fuente llamado `concrete.c` produce un archivo llamado `concrete.exe`. Puede ejecutar el programa escribiendo el nombre base en la línea de comando:
+
+```bash
+C> concret
+```
+
+#### Entornos de desarrollo integrado (Windows)
+
+Varios proveedores, incluidos Microsoft, Embarcadero y Digital Mars, ofrecen entornos de desarrollo integrados (IDE) basados ​​en Windows. (Actualmente, la mayoría son compiladores C y C++ combinados). Las descargas gratuitas incluyen Microsoft Visual Studio Express y Pelles C. Todas tienen entornos rápidos e integrados para armar programas en C. El punto clave es que cada uno de estos programas tiene un editor incorporado que puede usar para escribir un programa en C. Cada uno proporciona menús que le permiten nombrar y guardar su archivo de código fuente, así como también menús que le permiten compilar y ejecutar su programa sin abandonar el IDE. Cada uno lo devuelve al editor si el compilador encuentra cualquier error, y cada uno identifica las líneas ofensivas y las compara con los mensajes de error apropiados.
+
+Los IDE de Windows pueden ser un poco intimidantes al principio porque ofrecen una variedad de objetivos, es decir, una variedad de entornos en los que se utilizará el programa. Por ejemplo, podrían darle una opción de programas de Windows de 32 bits, programas de Windows de 64 bits, archivos de biblioteca de enlace dinámico (DLL), etc. Muchos de los objetivos implican brindar soporte para la interfaz gráfica de Windows. Para administrar estas (y otras) elecciones, normalmente crea un proyecto al que luego agrega los nombres de los archivos de código fuente que va a utilizar. Los pasos precisos dependen del producto que use. Normalmente, primero utiliza el menú Archivo o el menú Proyecto para crear un proyecto. Lo importante es elegir la forma correcta de proyecto. Los ejemplos en este libro son ejemplos genéricos diseñados para ejecutarse en un entorno de línea de comandos simple. Los diversos IDE de Windows brindan una o más opciones para que coincidan con esta suposición poco exigente. Microsoft Visual Studio, por ejemplo, ofrece la opción Aplicación de consola Win32. Para otros sistemas, busque una opción que utilice términos como DOS EXE, consola o ejecutable de modo de caracteres. Estos modos ejecutarán su programa ejecutable en una ventana similar a una consola. Después de tener el tipo de proyecto correcto, use el menú IDE para abrir un nuevo archivo de código fuente. Para la mayoría de los productos, puede hacer esto utilizando el menú Archivo. Es posible que deba realizar pasos adicionales para agregar el archivo de origen al proyecto.
+
+Debido a que los IDE de Windows normalmente manejan tanto C como C++, debe indicar que desea un programa C. Con algunos productos, utiliza el tipo de proyecto para indicar que desea utilizar C. Con otros productos, como Microsoft Visual C ++, utiliza la extensión de archivo .c para indicar que desea usar C en lugar de C ++. Sin embargo, la mayoría de los programas C también funcionan como programas C ++. La Sección de referencia IX, "Diferencias entre C y C ++", compara C y C ++.
+
+Un problema que puede encontrar es que la ventana que muestra la ejecución del programa desaparece cuando finaliza el programa. Si ese es su caso, puede hacer que el programa se detenga hasta que presione la tecla Intro. Para hacerlo, agregue la siguiente línea al final del programa, justo antes de la declaración `return`:
+
+```c
+getchar();
+```
