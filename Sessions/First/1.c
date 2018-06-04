@@ -1,18 +1,14 @@
 #include <stdio.h>
+/*  Este comentario aparece
+entre dos lineas    */
 main()
 {
-int num;//Este es un comentario
-num1 = 1;
-num2 = 2;
-num3 = 3;
+    int numb1, numb2, numb3;    /*  Este es un comentario en C  */
+    numb1 = 1;
+    numb2 = 2;
+    numb3 = 3;
 //int int =1; No se puede asigar int a una variable.
-printf("Soy una simple");
-printf("computer\t");
-printf("Mi numero favorito es %d porque es primero. \t", num2);
+    printf("Soy una simple");
+    printf("computer\t");
+    printf("Mi número favorito es %d porque es primero. \t", numb2);
 }
-
-//printf("")
-/* Este es un comentario en C */
-/* Este comentario aparece
-entre dos lineas*/
-
