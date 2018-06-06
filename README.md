@@ -8,7 +8,7 @@ Lenguaje de Programación C - Nivel Básico
 
 **Instructor**: [MSc. César Manuel Sebastián Díez Chirinos](http://dina.concytec.gob.pe/appDirectorioCTI/VerDatosInvestigador.do;jsessionid=fd6624fe7d9f148aabe8445c1992?id_investigador=24012)
 
-**E-mail**: [cdiezch@uni.edu.pe](mailto:cdiezch@uni.edu.pe)
+**E-mail :email:**: [cdiezch@uni.edu.pe](mailto:cdiezch@uni.edu.pe)
 
 **Aula**: Laboratorio N°4 del [Centro de Tecnologías de la Información y Comunicaciones](http://www.ctic.uni.edu.pe/) de la [Universidad Nacional de Ingeniería](http://www.uni.edu.pe/).
 
