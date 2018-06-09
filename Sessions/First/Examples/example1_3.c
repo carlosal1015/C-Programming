@@ -5,4 +5,3 @@ main() { int four; four
 printf(
 "%d \n",
 four);}
-

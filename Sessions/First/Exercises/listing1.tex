@@ -1,0 +1,159 @@
+% !TeX document-id = {23893128-e2d2-445f-8ab8-79b297fa2673}
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
+\documentclass[spanish,addpoints,answers,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{libertine}
+\usepackage[shortlabels]{enumitem}
+\usepackage[tmargin=2cm,rmargin=2cm,lmargin=2cm]{geometry}
+\pagestyle{plain}
+
+\usepackage{minted}
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución}\par\noindent}
+\begin{document}
+
+\begin{center}
+	\scshape\bfseries\LARGE\color{blue}
+	Lenguaje de programación C\\
+	Primera lista de ejercicios
+\end{center}
+
+\begin{center}
+	\fbox{\fbox{\parbox{5.5in}{\centering
+				Responda las preguntas en los espacios provistos en las hojas de preguntas. Los argumentos y la claridad de las respuestas se considerarán en la puntuación final.
+			}}}
+\end{center}
+\vspace{0.1in}
+\makebox[\textwidth]{Nombres y apellidos:\enspace\hrulefill}
+\vspace{0.2in}
+\makebox[\textwidth]{Nombres y apellidos del instructor:\enspace\hrulefill}
+
+\begin{questions}
+\question ¿Qué es un error semántico? Dé un ejemplo en castellano y uno en lenguaje C.
+
+\begin{solution}
+Un error semántico es un error de significado. Por ejemplo, considere la siguiente oración: Despreciados derivados cantan verdemente. La sintaxis está bien porque los adjetivos, los sustantivos, los verbos y los adverbios están en los lugares correctos, pero la oración no significa nada. En C, cometes un error semántico cuando sigues las reglas de C correctamente pero con un final incorrecto. El ejemplo tiene uno de esos errores:
+
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise1.c}
+\caption{Programa \texttt{stillbad.c} que presenta errores semánticos.}
+\label{lst:1}
+\end{listing}
+
+\end{solution}
+
+\question ¿Qué es un error de sintáxis? Dé un ejemplo en castellano y uno en lenguaje C.
+
+\begin{solution}
+Un error de sintaxis ocurre cuando no se sigue las reglas de C. Es análogo a un error gramatical en español. Por ejemplo, considere la siguiente frase: Los errores frustrar pueden. Esta oración usa palabras válidas en español, pero no sigue las reglas para el orden de las palabras, y de todas maneras no tiene las palabras correctas. Los errores de sintaxis C usan símbolos C válidos en los lugares incorrectos.
+
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise2.c}
+\caption{Programa \texttt{nogood.c} que presenta errores de sintáxis.}
+\label{lst:2}
+\end{listing}
+\
+{\footnotesize
+\begin{minted}{bash}
+nogood.c:6:1: error: unterminated /* comment/* this program has several errors n = 5;
+^nogood.c:5:22: error: expected ')'
+int n, int n2, int n3;
+^nogood.c:4:1: note: to match this '('
+(^
+nogood.c:3:9: error: function cannot return function type 'int (int, int, int)'
+int main(void)        ^
+3 errors generated.
+\end{minted}
+}
+\end{solution}
+
+\question \textbf{Ichabod Bodie Marfoode} ha preparado el siguiente programa y neceista su corrección, ayúdelo:
+
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3.c}
+\caption{Programa con errores.}
+\label{lst:3}
+\end{listing}
+
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3a.c}
+\caption{Example of a listing.}
+\label{lst:3a}
+\end{listing}
+\end{solution}
+
+\question Asumiendo que cada ejemplo es parte de un programa completo. ¿Qué imprimirá cada parte?
+
+\begin{parts}
+\part \mintinline{c}{printf("Baa Baa Black Sheep");}
+\part \mintinline{c}{printf("Have you any woo?\n");}
+\part \mintinline{c}{printf("Begone\no creature of lard");}
+\part
+\begin{minted}{c}
+int num;
+num=2;
+printf("%d+%d=%d",num,num,num+num);
+\end{minted}
+\end{parts}
+
+\begin{solution}
+a
+\end{solution}
+
+\question ¿Cómo imprimiría los valores de palabras y líneas en la forma?
+
+¿Había 3020 palabras y 350 líneas?
+
+Aquí, 3020 y 350 representan valores para las dos variables.
+
+\begin{solution}
+	A
+\end{solution}
+
+\question Escriba un programa que use una llamada \textbf{printf()} para imprimir en pantalla su nombre y apellido en una línea; use otro programa que use una línea para cada uno.
+
+\begin{solution}
+	A
+\end{solution}
+
+\question Escriba un programa para imprimir su nombre y dirección.
+
+\begin{solution}
+	A
+\end{solution}
+
+\question Escriba un programa que escriba su edad en años a días. No se preocupe por las fracciones de años.
+
+\begin{solution}
+	A
+\end{solution}
+
+\question Escriba un programa que escriba:
+
+For he's a jolly good fellow!
+
+For he's a jolly good fellow!
+
+For he's a jolly good fellow!
+
+Which nobody can deny!
+
+\begin{solution}
+	A
+\end{solution}
+
+\question Escriba un programa que cree una variable entera llamada \textbf{toes}, que le asigne el valor de $10$ y que calcule cuánto vale el doble.
+
+\begin{solution}
+	A
+\end{solution}
+
+\end{questions}
+
+\end{document}

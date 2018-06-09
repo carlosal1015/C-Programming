@@ -1,0 +1,15 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cm}{/* nogood.c \PYGZhy{}\PYGZhy{} a program with errors */}
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}stdio.h\PYGZgt{}}
+\PYG{k+kt}{int} \PYG{n+nf}{main}\PYG{p}{(}\PYG{k+kt}{void}\PYG{p}{)}
+\PYG{p}{(}
+	\PYG{k+kt}{int} \PYG{n}{n}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{n2}\PYG{p}{,} \PYG{k+kt}{int} \PYG{n}{n3}\PYG{p}{;}
+
+\PYG{c+cm}{/* this program has several errors}
+\PYG{c+cm}{	n = 5;}
+\PYG{c+cm}{	n2 = n * n;}
+\PYG{c+cm}{	n3 = n2 * n2;}
+\PYG{c+cm}{	printf(\PYGZdq{}n = \PYGZpc{}d, n squared = \PYGZpc{}d, n cubed = \PYGZpc{}d\PYGZbs{}n\PYGZdq{}, n, n2, n3)}
+\PYG{c+cm}{	return 0;}
+\PYG{c+cm}{)}
+\end{Verbatim}
