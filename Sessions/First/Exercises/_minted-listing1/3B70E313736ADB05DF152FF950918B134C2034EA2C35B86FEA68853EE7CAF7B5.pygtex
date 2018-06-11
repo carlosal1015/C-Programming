@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}stdio.h\PYGZgt{}}
+\PYG{n}{main}\PYG{p}{()}
+\PYG{p}{\PYGZob{}}
+    \PYG{k+kt}{int} \PYG{n}{words} \PYG{o}{=} \PYG{l+m+mi}{3020}\PYG{p}{,} \PYG{n}{lines} \PYG{o}{=} \PYG{l+m+mi}{350}\PYG{p}{;}
+    \PYG{n}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}¿Había \PYGZpc{}d palabras y \PYGZpc{}d líneas?}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{\PYGZdq{}}
+    \PYG{l+s}{\PYGZdq{}Aquí, \PYGZpc{}d y \PYGZpc{}d representan valores para las dos variables.}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{\PYGZdq{}}\PYG{p}{,}
+    \PYG{n}{words}\PYG{p}{,} \PYG{n}{lines}\PYG{p}{,} \PYG{n}{words}\PYG{p}{,} \PYG{n}{lines}\PYG{p}{);}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
