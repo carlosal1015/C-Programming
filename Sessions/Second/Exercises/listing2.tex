@@ -1,0 +1,160 @@
+% !TeX document-id = {21d95b9e-6149-4bf7-a0af-622fadedeb8b}
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
+\documentclass[spanish,addpoints,answers,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{libertine}
+\usepackage[tmargin=2cm,rmargin=2cm,lmargin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+\pagestyle{plain}
+
+\usepackage{minted}
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución}\par\noindent}
+\renewcommand\listingscaption{Listado}
+\newcommand{\unmarkedfntext}[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+\spanishdatedel
+\begin{document}
+
+\begin{center}
+\scshape\bfseries\LARGE\color{blue}
+Lenguaje de programación C\\
+Segunda lista de ejercicios
+\end{center}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}
+{\centering
+Responda las preguntas en los espacios provistos en las hojas de preguntas. Los argumentos y la claridad de las respuestas se considerarán en la puntuación final.
+}}}
+\end{center}
+\vspace{0.1in}
+\makebox[\textwidth]{Nombres y apellidos:\enspace\hrulefill}
+\vspace{0.2in}
+\makebox[\textwidth]{Nombres y apellidos del instructor:\enspace MSc. César Manuel Sebastián Díez Chirinos.\hfill}
+
+\begin{questions}
+
+\question ¿Qué es un error semántico? Dé un ejemplo en castellano y uno en lenguaje C.
+
+\begin{solution}
+
+%\begin{listing}[H]
+%\footnotesize
+%\inputminted{c}{exercise1.c}
+%\caption{El programa \texttt{stillbad.c} presenta errores semánticos.}
+%\label{lst:1}
+%\end{listing}
+
+\end{solution}
+
+\question ¿Qué tipo de datos usaría para cada uno de los siguientes tipos de datos?
+\begin{parts}
+\part La población del Río Frito.
+\part El peso promedio de una pintura de Rembrandt.
+\part La letra más común en este capítulo.
+\part El número de veces que esta letra ocurre.
+\end{parts}
+
+\begin{solution}
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+
+\item Imprimirá:
+
+\begin{minted}{bash}
+pc@CTIC:~$ Baa Baa Black Sheep
+\end{minted}
+
+\item Imprimirá:
+
+\begin{minted}{bash}
+pc@CTIC:~$ Have you any woo?
+pc@CTIC:~$ 
+\end{minted}
+
+\end{enumerate}
+\end{multicols}
+\end{solution}
+
+\question Virgila Ann Xenopod ha inventado un progrma cargado de errores. Corríjale sus errores:
+
+\begin{minted}{c}
+#include <stdio.h>
+main{
+float g;h;
+float tax, rate;
+g=e21;
+tax=rate*g;
+}
+\end{minted}
+
+\question Identifique el tipo de datos (usados en declaraciones de sentencias) y el formato específico \mintinline{c}{printf()} para cada constante:
+
+\begin{table}[H]
+	\centering
+\begin{tabular}{|l|l|c|c|}
+	\hline
+	\multicolumn{2}{|c|}{\bfseries Constant} & \textbf{Type} & \textbf{Specifier}	\\
+	\hline
+	A	&	012 	& 	& 	\\
+	\hline
+	B 	&	2.9e05L	&	&	\\
+	\hline
+	C	&	's'		& 	&	\\
+	\hline
+	D	&	10000 	& 	&	\\
+	\hline
+	E	&	'$\backslash$n' &	&	\\
+	\hline
+	F	&	20.0f	&	&	\\
+	\hline
+	G	&	0x44	&	&	\\
+	\hline
+\end{tabular}
+\end{table}
+
+\question Corrija este programa silly.\qquad(El / en C significa división)
+
+\begin{minted}{c}
+main()	/ Este programa es perfecto/
+{
+cows, legs integer;
+printf();
+scanf();
+cows=legs/4;
+printf("Esto implica que hay %f cows",cows)
+}
+\end{minted}
+
+\question Ecnuentre que hace su sistema con desbordamiento de enteros, desbordamiento de puntos flotantes y el opuesto de desbordamiento de puntos flotantes.
+
+\question Escriba un programa que pregunte cómo ingresa un valor en código ASCII, como $66$, e imprima el carácter en código \textbf{ASCII}.
+
+\question Escriba un programa que informe una alerta e imprima el siguiente texto:
+
+Asustada por el sonido, Sally gritó: \textbf{``Por la gran calabaza, ¡Qué fue eso!''}
+
+\question Escriba un programa que lea un número de punto flotante e imprima primero en notación decimal y luego en notación exponencial. Puede tener esta estructura:
+
+La entrada es $21.290000$ o $2.129000\text{e}+001$.
+
+\question Aproximadamente hay 
+
+\question Las masas de una molécula simple tiene unos $3,0\times10^{-23}$ gramos. Un cuarto de agua es unos $950$ gramos. Escriba un programa que solicite la cantidad de agua, en cuartos, y visualice el número de moléculas de agua en esa cantidad. 
+\end{questions}
+\begin{flushright}\bfseries
+Centro de Tecnologías de la Información y Comunicaciones (CTIC)\\[2mm]
+\today\unmarkedfntext{Los archivos fuente lo encuentra  \href{https://github.com/carlosal1015/C-Programming}{\textbf{aquí}.}}
+\end{flushright}
+\end{document}

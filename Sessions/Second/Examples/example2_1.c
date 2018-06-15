@@ -1,11 +1,11 @@
-/* goldyou.c - el valor de su peso en oro*/
+/* goldyou.c - el valor de su peso en oro */
 #include <stdio.h>
 main()
 {
-	float weight, value;	/* dos variables de puntos flotantes		*/
-	char beep; 				/* una variable car�cter					*/
+	float weight, value;	/* dos variables de punto flotantes			*/
+	char beep; 				/* una variable carácter					*/
 	beep = '\007';			/* caracter "\a"							*/
-							/* asignacion de un car�cter especial a beep*/
+							/* asignación de un carácter especial a beep*/
 	printf("¿Cuánto vale su peso en oro?\n");
 	printf("Por favor ingrese su peso en libras, \n");
 	printf("y veremos. \n");
@@ -20,5 +20,5 @@ main()
 }
 
 /*
-%.2f me indica el numero de decimales
+%.2f me indica el número de decimales
 */

@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{main}\PYG{p}{()}	\PYG{o}{/} \PYG{n}{Este} \PYG{n}{programa} \PYG{n}{es} \PYG{n}{perfecto}\PYG{o}{/}
+\PYG{p}{\PYGZob{}}
+\PYG{n}{cows}\PYG{p}{,} \PYG{n}{legs} \PYG{n}{integer}\PYG{p}{;}
+\PYG{n}{printf}\PYG{p}{();}
+\PYG{n}{scanf}\PYG{p}{();}
+\PYG{n}{cows}\PYG{o}{=}\PYG{n}{legs}\PYG{o}{/}\PYG{l+m+mi}{4}\PYG{p}{;}
+\PYG{n}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Esto implica que hay \PYGZpc{}f cows\PYGZdq{}}\PYG{p}{,}\PYG{n}{cows}\PYG{p}{)}
+\PYG{p}{\PYGZcb{}}
+\end{Verbatim}
