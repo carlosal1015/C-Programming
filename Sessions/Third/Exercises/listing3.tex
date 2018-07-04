@@ -1,0 +1,137 @@
+% !TeX document-id = {21d95b9e-6149-4bf7-a0af-622fadedeb8b}
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
+\documentclass[spanish,addpoints,answers,a4paper]{exam}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{libertine}
+\usepackage[tmargin=2cm,rmargin=2cm,lmargin=2cm]{geometry}
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage{siunitx}
+\usepackage{multicol}
+\usepackage{hyperref}
+
+\pagestyle{plain}
+
+\usepackage{minted}
+\renewcommand{\solutiontitle}{\noindent\textbf{Solución}\par\noindent}
+\renewcommand\listingscaption{Listado}
+\newcommand{\unmarkedfntext}[1]{%
+	\begingroup
+	\renewcommand\thefootnote{}\footnote{#1}%
+	\addtocounter{footnote}{-1}%
+	\endgroup
+}
+\spanishdatedel
+\decimalpoint
+\begin{document}
+
+\begin{center}
+\scshape\bfseries\LARGE\color{blue}
+Lenguaje de programación C\\
+Segunda lista de ejercicios
+\end{center}
+
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}
+{\centering
+Responda las preguntas en los espacios provistos en las hojas de preguntas. Los argumentos y la claridad de las respuestas se considerarán en la puntuación final.
+}}}
+\end{center}
+\vspace{0.1in}
+\makebox[\textwidth]{Nombres y apellidos:\enspace\hrulefill}
+\vspace{0.2in}
+\makebox[\textwidth]{Nombres y apellidos del instructor:\enspace MSc. César Manuel Sebastián Díez Chirinos.\hfill}
+
+\begin{questions}
+
+\question  Si todas las variables son del tipo \mintinline{c}{int}, calcule:
+
+\begin{parts}
+\part \mintinline{c}{X=(2+3)*6}
+\part \mintinline{c}{X=(12+6)/2*3;}
+\part \mintinline{c}{Y=x=(2+3)/4;}
+\part \mintinline{c}{Y=3+2*(x=7/2);}
+\end{parts}
+
+\question Corrija este programa silly.\qquad(El / en C significa división)
+
+\begin{minted}{c}
+main()
+{
+int=1,
+float n;
+scanf();
+printf("watch out! Here come a bunch of fractions!\n");s
+while(i<30)
+n=1/i;
+printf("%f", n);
+printf("That's all, folks!\n");
+}
+\end{minted}
+
+\question Hacer un \mintinline{c}{min_sec} interactivo no es fácil. ¿Cómo se puede mejorar?
+
+\begin{minted}{c}
+#include<stdio.h>
+#define S_TO_M 60
+main()
+{
+int sec, min, left;
+printf("This program convierte segundos a minutos y");
+printf("segundos.\n");
+printf("Solo debe ingresar los segundos.\n");
+printf("Ingrese 0 para finalizar el programa.\n");
+while(sec>0){
+scanf("%d", &sec);
+min=sec/S_TO_M;
+left=sec%S_TO_M;
+printf("%d sec is %d min, %d sec.\n", sec, min, left);
+printf("Next input?\n");
+}
+printf("See you!\n");
+}
+\end{minted}
+
+\question Escriba un programa que pregunte por un entero, y que imprima los enteros desde este número hasta $10$ más de este. (Si fuera $5$, sería desde $5$ hasta $15$).
+
+\question Escriba un programa que solicite un decimal e imprima su cubo.
+
+\question Use un while loop para convertir el tiempo en minutos a el tiempo en horas y minutos.
+
+\question ¿Qué imprimirá este programa?
+
+\begin{minted}{c}
+#include<stdio.h>
+#define FORMAT "%s is a string\n"
+main()
+{
+int num=0;
+printf(FORMAT, FORMAT);
+printf("%d\n", ++num);
+printf("%d\n", num++);
+printf("%d\n", num--);
+printf("%d\n", num);
+}
+\end{minted}
+
+\question Cambie el programa \texttt{addemup.c} para calcular cuánto dinero ganaría en $20$ días, si recibe $1\$$ el primer día, $2\$$ el segundo, $3\$$ el tercero y así.
+
+\question Escriba un programa que convierta sus días en semanas y días.
+
+\question Construya sentencia que hagan lo siguiente:
+
+\begin{enumerate}
+	\item Incremente la variable \mintinline{c}{x} por 10.
+	\item Incremente la variable \mintinline{c}{x} por 1.
+	\item Asigne dos veces la suma de \mintinline{c}{a} y \mintinline{c}{b} a \mintinline{c}{c}.
+	\item Asigne \mintinline{c}{a} más dos veces \mintinline{c}{b} a \mintinline{c}{c}.
+\end{enumerate}
+
+\end{questions}
+\begin{flushright}\bfseries
+Centro de Tecnologías de la Información y Comunicaciones (CTIC)\\[2mm]
+\today\unmarkedfntext{Los archivos fuente lo encuentra  \href{https://github.com/carlosal1015/C-Programming}{\textbf{aquí}.}}
+\end{flushright}
+\end{document}
