@@ -30,7 +30,7 @@
 \begin{center}
 \scshape\bfseries\LARGE\color{blue}
 Lenguaje de programación C\\
-Segunda lista de ejercicios
+Tercera lista de ejercicios
 \end{center}
 
 \begin{center}
@@ -46,88 +46,65 @@ Responda las preguntas en los espacios provistos en las hojas de preguntas. Los 
 
 \begin{questions}
 
-\question  Si todas las variables son del tipo \mintinline{c}{int}, calcule:
+\question Escriba un programa que muestre cada flag visto en este capítulo.
 
-\begin{parts}
-\part \mintinline{c}{X=(2+3)*6}
-\part \mintinline{c}{X=(12+6)/2*3;}
-\part \mintinline{c}{Y=x=(2+3)/4;}
-\part \mintinline{c}{Y=3+2*(x=7/2);}
-\end{parts}
+\question Escriba un programa que nos dé la siguiente salida:
 
-\question Corrija este programa silly.\qquad(El / en C significa división)
-
-\begin{minted}{c}
-main()
-{
-int=1,
-float n;
-scanf();
-printf("watch out! Here come a bunch of fractions!\n");s
-while(i<30)
-n=1/i;
-printf("%f", n);
-printf("That's all, folks!\n");
-}
+\begin{minted}{bash}
+**42**42**-42**
+**    6**  006**00006**  006
 \end{minted}
 
-\question Hacer un \mintinline{c}{min_sec} interactivo no es fácil. ¿Cómo se puede mejorar?
+\question ¿Es factible la siguiente línea?
 
 \begin{minted}{c}
-#include<stdio.h>
-#define S_TO_M 60
-main()
-{
-int sec, min, left;
-printf("This program convierte segundos a minutos y");
-printf("segundos.\n");
-printf("Solo debe ingresar los segundos.\n");
-printf("Ingrese 0 para finalizar el programa.\n");
-while(sec>0){
-scanf("%d", &sec);
-min=sec/S_TO_M;
-left=sec%S_TO_M;
-printf("%d sec is %d min, %d sec.\n", sec, min, left);
-printf("Next input?\n");
-}
-printf("See you!\n");
-}
+rv = printf(%d F es el punto de ebullición del agua.");
 \end{minted}
 
-\question Escriba un programa que pregunte por un entero, y que imprima los enteros desde este número hasta $10$ más de este. (Si fuera $5$, sería desde $5$ hasta $15$).
+si es factible, dé un ejemplo.
 
-\question Escriba un programa que solicite un decimal e imprima su cubo.
-
-\question Use un while loop para convertir el tiempo en minutos a el tiempo en horas y minutos.
-
-\question ¿Qué imprimirá este programa?
-
-\begin{minted}{c}
-#include<stdio.h>
-#define FORMAT "%s is a string\n"
-main()
-{
-int num=0;
-printf(FORMAT, FORMAT);
-printf("%d\n", ++num);
-printf("%d\n", num++);
-printf("%d\n", num--);
-printf("%d\n", num);
-}
-\end{minted}
-
-\question Cambie el programa \texttt{addemup.c} para calcular cuánto dinero ganaría en $20$ días, si recibe $1\$$ el primer día, $2\$$ el segundo, $3\$$ el tercero y así.
-
-\question Escriba un programa que convierta sus días en semanas y días.
+\question Escriba un programa donde se especifique el uso de \inputminted{bash}{*}:
 
 \question Construya sentencia que hagan lo siguiente:
 
-\begin{enumerate}
-	\item Incremente la variable \mintinline{c}{x} por 10.
-	\item Incremente la variable \mintinline{c}{x} por 1.
-	\item Asigne dos veces la suma de \mintinline{c}{a} y \mintinline{c}{b} a \mintinline{c}{c}.
-	\item Asigne \mintinline{c}{a} más dos veces \mintinline{c}{b} a \mintinline{c}{c}.
+\begin{parts}
+	\part En la función \mintinline{c}{printf()}
+	\part En la función \mintinline{c}{scanf()}
+\end{parts}
+\question Suponga que un programa inicia con:
+
+\begin{minted}{c}
+#define BOOK "War and Peace"
+main()
+{
+float cost=12.99;
+float percent=80.0;
+\end{minted}
+
+Ahora construya una sentencia \inputminted{c}{printf()} que use BOOK y cost e imprima:
+
+\begin{flushleft}
+Esta copia de ``War y Peace'' se vende por \$12.99.
+
+Es decir, el 80\% de la lista.
+\end{flushleft}
+
+\question Asuma que cada uno de los siguientes ejemplos es parte de un programa completo, ¿qué aparecerá en cada una?
+\begin{enumerate}[a.]
+\item \inputminted{c}{printf("El vendió el cuadro por \$2.2f.\n", 2.345e2)};
+\item \inputminted{c}{printf("\%c\%c\%c\n",'H','105','\41');}
+\item \inputminted{c}{#define Q "Sy Hamlet era divertido sin ser vulgar."}
+\item \inputminted{c}{printf("Es %2.2e los mismo que %2.2f?.\n",1201.0,1201.0);}
 \end{enumerate}
+\question Escriba un programa que pregunte por su primer nombre, y luego su apellido, y luego los imprima primero el apellido y luego el nombre.
+\question Escriba un programa que requiera su peso en pulgadas y su nombre y que imprima:
+\begin{minted}{bash}
+Dabney, eres 6.028 pies de alto.
+\end{minted}
+
+\question Escriba un programa que requiera el primer nombre de usuario y luego el apellido del usuario. Imprima los nombres en una línea y el número de letras de cada nombre en la siguiente línea.
+
+\question Repita el ejercicio anterior alineando cada nombre con cada número.
 
 \end{questions}
 \begin{flushright}\bfseries
