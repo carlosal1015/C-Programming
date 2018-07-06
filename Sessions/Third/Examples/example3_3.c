@@ -4,10 +4,12 @@
 main(){
 float area, circum, radius;
 
-printf("�Cual es el radio de su pizza?%% \n");
+printf("¿Cuál es el radio de su pizza? (en cm.)\n");
 scanf("%f", &radius);
+
 area = PI*radius*radius;
 circum = 2.0*PI*radius;
-printf("Los parametros basicos de su pizza son: \n");
-printf("circunferencia = %1.2f, area= %1.2f\n", circum, area);
+
+printf("Los parámetros básicos de su pizza son: \n");
+printf("circunferencia = %1.2f, área= %1.2f\n", circum, area);
 }

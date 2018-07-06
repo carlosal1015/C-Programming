@@ -1,32 +1,36 @@
-/* talkback.c -- curioso, programa informático */
+/* talkback.c -- curioso, programa informÃ¡tico */
 #include <stdio.h>
 #include <string.h>
 //#define DENSITY 62.4
-void butler(void);		//prototipo de la función
+
+void butler(void);			// Prototipo de la funciÃ³n butler.
+
 main()
 {
 #define DENSITY 62.4
+
 float weight, volume;
 int size, letters;
 char name[20];
 
-printf("Hola, ¿cuál es su nombre?\n");
-scanf("%s",name);	//no es necesario usar &
-printf("%s, ¿cuál es su peso en libros?\n",name);
+printf("Hola, Â¿cuÃ¡l es su nombre?\n");
+scanf("%s", name);			//Con los datos carÃ¡cter ya no es necesario usar &
+printf("%s, Â¿cuÃ¡l es su peso en libras?\n",name);
 scanf("%f", &weight);
 
 size = sizeof name;
 letters = strlen(name);
 volume = weight/DENSITY;
 
-printf("Bueno, %s, su volumen es %2.2f pues cúbicos. \n", name, volume);
-printf("También, su primer nombre tiene %d letras, \n", letters);
+printf("Bueno, %s, su volumen es %2.2f pies cÃºbicos. \n", name, volume);
+printf("TambiÃ©n, su primer nombre tiene %d letras, \n", letters);
 printf("y tenemos %d bytes para almacenarlos.\n", size);
+
 butler();
 }
 
 void butler(void){
 	char name[20];
-	printf("%s Hola mundo", name);	//hay que declarar
+	printf("%s Hola mundo", name);	// Es necesario declarar name. Â¿QuÃ© se obtiene en name?
 }
 

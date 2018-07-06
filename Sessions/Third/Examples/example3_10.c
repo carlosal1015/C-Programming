@@ -2,9 +2,11 @@
 #include <stdio.h>
 main()
 {
-	int n;
-	
-	printf("Ingrese tres enteros:\n");
-	scanf("%*d %*d %d", &n);
-	printf("El último entero fue %d", n);
+
+int n;
+
+printf("Ingrese tres enteros:\n");
+scanf("%*d %*d %d", &n);
+
+printf("El Ãºltimo entero fue %d.\n", n);
 }

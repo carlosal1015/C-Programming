@@ -1,7 +1,4 @@
-hola mundo
-Crear un Word, y mandar, tipear y practicar.
 https://uni-pe.zoom.us/
-https://stackoverflow.com/questions/19732959/how-to-move-c-functions-into-separate-file
 https://cboard.cprogramming.com/cplusplus-programming/113443-where-put-local-auxiliary-functions.html
 https://stackoverflow.com/questions/3456138/this-program-sounds-the-bell
 https://stackoverflow.com/questions/13161199/ascii-table-negative-value

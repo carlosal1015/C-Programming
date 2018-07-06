@@ -2,9 +2,10 @@
 #include <stdio.h>
 main()
 {
+
 int n = 212;
 int rv;
 
-rv = printf("%d F es el punto de ebullicion del agua.\n", n);
-printf("La funci�n printf() imprimio %d caracteres\n", rv);
+rv = printf("%d°F es el punto de ebullición del agua.\n", n);
+printf("La función printf() imprimió %d caracteres\n", rv);
 }

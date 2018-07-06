@@ -7,4 +7,5 @@ printf("/%2d/\n", PAGES);
 printf("/%10d/\n", PAGES);
 printf("/%-10d/\n", PAGES);
 }
+
 //no debe ser mas de 10 espacios
