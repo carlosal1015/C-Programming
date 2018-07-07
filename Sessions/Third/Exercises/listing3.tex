@@ -1,20 +1,21 @@
 % !TeX document-id = {21d95b9e-6149-4bf7-a0af-622fadedeb8b}
 % !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
 \documentclass[spanish,addpoints,answers,a4paper]{exam}
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 \usepackage{libertine}
 \usepackage[tmargin=2cm,rmargin=2cm,lmargin=2cm]{geometry}
-\usepackage{amsmath}
+\usepackage{amsmath,bm}
 \usepackage[shortlabels]{enumitem}
 \usepackage{siunitx}
 \usepackage{multicol}
-\usepackage{hyperref}
 
+\usepackage{graphicx}
+\graphicspath{{../../../images/}}
 \pagestyle{plain}
 
 \usepackage{minted}
+\usepackage{hyperref}
 \renewcommand{\solutiontitle}{\noindent\textbf{Solución}\par\noindent}
 \renewcommand\listingscaption{Listado}
 \newcommand{\unmarkedfntext}[1]{%
@@ -25,21 +26,41 @@
 }
 \spanishdatedel
 \decimalpoint
+
+\def\LOGOUNI{%
+	\begin{picture}(0,0)\unitlength=1cm
+	\put (-13.5,-2.5) {\includegraphics[width=2.8cm]{logouni}}
+	\end{picture}
+}
+
+\def\LOGOCTIC{%
+	\begin{picture}(0,0)\unitlength=1cm
+	\put (-8,-1.2) {\includegraphics[height=1cm]{logocticblack}}
+	\end{picture}
+}
+
+\newcommand{\mychar}{%
+	\begingroup\normalfont
+	\includegraphics[height=\fontcharht\font`\B]{Octocat.png}%
+	\endgroup
+}
 \begin{document}
 
 \begin{center}
-\scshape\bfseries\LARGE\color{blue}
-Lenguaje de programación C\\
-Tercera lista de ejercicios
+\sffamily\bfseries\scshape
+{\Large UNIVERSIDAD NACIONAL DE INGENIERÍA}\LOGOUNI\\
+Centro de Tecnologías de la Información y Comunicaciones\LOGOCTIC\\
 \end{center}
 
-\begin{center}
-\fbox{\fbox{\parbox{5.5in}
-{\centering
-Responda las preguntas en los espacios provistos en las hojas de preguntas. Los argumentos y la claridad de las respuestas se considerarán en la puntuación final.
-}}}
+\vspace{.8cm}
+
+\begin{center}\sffamily\bfseries\large
+C/C++ PROGRAMMING LANGUAGE\\
+TEMA $\bm{3}$: CHARACTER STRINGS AND FORMATTED I/0
 \end{center}
-\vspace{0.1in}
+
+\vspace{.5cm}
+\noindent
 \makebox[\textwidth]{Nombres y apellidos:\enspace\hrulefill}
 \vspace{0.2in}
 \makebox[\textwidth]{Nombres y apellidos del instructor:\enspace MSc. César Manuel Sebastián Díez Chirinos.\hfill}
@@ -63,7 +84,7 @@ rv = printf(%d F es el punto de ebullición del agua.");
 
 si es factible, dé un ejemplo.
 
-\question Escriba un programa donde se especifique el uso de \inputminted{bash}{*}:
+\question Escriba un programa donde se especifique el uso de \mintinline{bash}{*}:
 
 \question Construya sentencia que hagan lo siguiente:
 
@@ -81,7 +102,7 @@ float cost=12.99;
 float percent=80.0;
 \end{minted}
 
-Ahora construya una sentencia \inputminted{c}{printf()} que use BOOK y cost e imprima:
+Ahora construya una sentencia \mintinline{c}{printf()} que use BOOK y cost e imprima:
 
 \begin{flushleft}
 Esta copia de ``War y Peace'' se vende por \$12.99.
@@ -91,11 +112,12 @@ Es decir, el 80\% de la lista.
 
 \question Asuma que cada uno de los siguientes ejemplos es parte de un programa completo, ¿qué aparecerá en cada una?
 \begin{enumerate}[a.]
-\item \inputminted{c}{printf("El vendió el cuadro por \$2.2f.\n", 2.345e2)};
-\item \inputminted{c}{printf("\%c\%c\%c\n",'H','105','\41');}
-\item \inputminted{c}{#define Q "Sy Hamlet era divertido sin ser vulgar."}
-\item \inputminted{c}{printf("Es %2.2e los mismo que %2.2f?.\n",1201.0,1201.0);}
+\item \mintinline{c}{printf("El vendió el cuadro por $2.2f.\n", 2.345e2)};
+\item \mintinline{c}{printf("%c%c%c\n",'H','105','\41');}
+\item \mintinline{c}{#define Q "Su Hamlet era divertido sin ser vulgar."}
+\item \mintinline{c}{printf("Es %2.2e los mismo que %2.2f?.\n",1201.0,1201.0);}
 \end{enumerate}
+
 \question Escriba un programa que pregunte por su primer nombre, y luego su apellido, y luego los imprima primero el apellido y luego el nombre.
 \question Escriba un programa que requiera su peso en pulgadas y su nombre y que imprima:
 \begin{minted}{bash}
@@ -107,8 +129,10 @@ Dabney, eres 6.028 pies de alto.
 \question Repita el ejercicio anterior alineando cada nombre con cada número.
 
 \end{questions}
+
 \begin{flushright}\bfseries
 Centro de Tecnologías de la Información y Comunicaciones (CTIC)\\[2mm]
-\today\unmarkedfntext{Los archivos fuente lo encuentra  \href{https://github.com/carlosal1015/C-Programming}{\textbf{aquí}.}}
+\today\unmarkedfntext{Código disponible en \href{https://github.com/carlosal1015/C-Programming}{\mychar{}}.}
 \end{flushright}
+
 \end{document}

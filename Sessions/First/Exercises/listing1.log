@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.18)  6 JUL 2018 20:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.18)  6 JUL 2018 23:38
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -359,40 +359,104 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutvoffset=\dimen114
 \Gm@dimlist=\toks22
 )
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip68
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen115
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen116
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count136
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count137
+\leftroot@=\count138
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count139
+\DOTSCASE@=\count140
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen117
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count141
+\c@MaxMatrixCols=\count142
+\dotsspace@=\muskip10
+\c@parentequation=\count143
+\dspbrk@lvl=\count144
+\tag@help=\toks24
+\row@=\count145
+\column@=\count146
+\maxfields@=\count147
+\andhelp@=\toks25
+\eqnshift@=\dimen118
+\alignsep@=\dimen119
+\tagshift@=\dimen120
+\tagwidth@=\dimen121
+\totwidth@=\dimen122
+\lineht@=\dimen123
+\@envbody=\toks26
+\multlinegap=\skip69
+\multlinetaggap=\skip70
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/bm.sty
+Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup4
+\symboldletters=\mathgroup5
+\symboldsymbols=\mathgroup6
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
+LaTeX Info: Redefining \bm on input line 207.
+)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\enitkv@toks@=\toks23
-\labelindent=\skip68
-\enit@outerparindent=\dimen115
-\enit@toks=\toks24
-\enit@inbox=\box27
-\enitdp@description=\count136
+\enitkv@toks@=\toks28
+\labelindent=\skip71
+\enit@outerparindent=\dimen124
+\enit@toks=\toks29
+\enit@inbox=\box29
+\enitdp@description=\count148
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
-\c@tracingmulticols=\count137
-\mult@box=\box28
-\multicol@leftmargin=\dimen116
-\c@unbalance=\count138
-\c@collectmore=\count139
-\doublecol@number=\count140
-\multicoltolerance=\count141
-\multicolpretolerance=\count142
-\full@width=\dimen117
-\page@free=\dimen118
-\premulticols=\dimen119
-\postmulticols=\dimen120
-\multicolsep=\skip69
-\multicolbaselineskip=\skip70
-\partial@page=\box29
-\last@line=\box30
-\maxbalancingoverflow=\dimen121
-\mult@rightbox=\box31
-\mult@grightbox=\box32
-\mult@gfirstbox=\box33
-\mult@firstbox=\box34
-\@tempa=\box35
-\@tempa=\box36
+\c@tracingmulticols=\count149
+\mult@box=\box30
+\multicol@leftmargin=\dimen125
+\c@unbalance=\count150
+\c@collectmore=\count151
+\doublecol@number=\count152
+\multicoltolerance=\count153
+\multicolpretolerance=\count154
+\full@width=\dimen126
+\page@free=\dimen127
+\premulticols=\dimen128
+\postmulticols=\dimen129
+\multicolsep=\skip72
+\multicolbaselineskip=\skip73
+\partial@page=\box31
+\last@line=\box32
+\maxbalancingoverflow=\dimen130
+\mult@rightbox=\box33
+\mult@grightbox=\box34
+\mult@gfirstbox=\box35
+\mult@firstbox=\box36
 \@tempa=\box37
 \@tempa=\box38
 \@tempa=\box39
@@ -408,14 +472,16 @@ Package: multicol 2018/04/20 v1.8s multicolumn formatting (FMi)
 \@tempa=\box49
 \@tempa=\box50
 \@tempa=\box51
-\c@columnbadness=\count143
-\c@finalcolumnbadness=\count144
-\last@try=\dimen122
-\multicolovershoot=\dimen123
-\multicolundershoot=\dimen124
-\mult@nat@firstbox=\box52
-\colbreak@box=\box53
-\mc@col@check@num=\count145
+\@tempa=\box52
+\@tempa=\box53
+\c@columnbadness=\count155
+\c@finalcolumnbadness=\count156
+\last@try=\dimen131
+\multicolovershoot=\dimen132
+\multicolundershoot=\dimen133
+\mult@nat@firstbox=\box54
+\colbreak@box=\box55
+\mc@col@check@num=\count157
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
@@ -468,16 +534,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen125
-\Hy@linkcounter=\count146
-\Hy@pagecounter=\count147
+\@linkdim=\dimen134
+\Hy@linkcounter=\count158
+\Hy@pagecounter=\count159
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count148
+\Hy@SavedSpaceFactor=\count160
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -489,17 +555,17 @@ Package hyperref Info: Plain pages OFF on input line 4524.
 Package hyperref Info: Backreferencing OFF on input line 4529.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4762.
-\c@Hy@tempcnt=\count149
+\c@Hy@tempcnt=\count161
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip10
+\Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5115.
-\XeTeXLinkMargin=\dimen126
-\Fld@menulength=\count150
-\Field@Width=\dimen127
-\Fld@charsize=\dimen128
+\XeTeXLinkMargin=\dimen135
+\Fld@menulength=\count162
+\Field@Width=\dimen136
+\Fld@charsize=\dimen137
 Package hyperref Info: Hyper figures OFF on input line 6369.
 Package hyperref Info: Link nesting OFF on input line 6374.
 Package hyperref Info: Hyper index ON on input line 6377.
@@ -509,23 +575,43 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6394.
 Package hyperref Info: PDF/A mode OFF on input line 6399.
 LaTeX Info: Redefining \ref on input line 6439.
 LaTeX Info: Redefining \pageref on input line 6443.
-\Hy@abspage=\count151
-\c@Item=\count152
-\c@Hfootnote=\count153
+\Hy@abspage=\count163
+\c@Item=\count164
+\c@Hfootnote=\count165
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/02/06 v6.86b Hyperref driver for pdfTeX
-\Fld@listcount=\count154
-\c@bookmark@seq@number=\count155
+\Fld@listcount=\count166
+\c@bookmark@seq@number=\count167
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip71
+\Hy@SectionHShift=\skip74
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen138
+\Gin@req@width=\dimen139
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/minted/minted.sty
 Package: minted 2017/07/19 v2.5 Yet another Pygments shim for LaTeX
@@ -536,18 +622,18 @@ b
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count156
+\etb@tempcnta=\count168
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
 
 Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
 <2008/02/07> (tvz)
-\FV@CodeLineNo=\count157
+\FV@CodeLineNo=\count169
 \FV@InFile=\read1
-\FV@TabBox=\box54
-\c@FancyVerbLine=\count158
-\FV@StepNumber=\count159
+\FV@TabBox=\box56
+\c@FancyVerbLine=\count170
+\FV@StepNumber=\count171
 \FV@OutFile=\write3
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/upquote/upquote.sty
@@ -556,56 +642,56 @@ tim
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count160
-\output=\toks25
-\linenoprevgraf=\count161
-\linenumbersep=\dimen129
-\linenumberwidth=\dimen130
-\c@linenumber=\count162
-\c@pagewiselinenumber=\count163
-\c@LN@truepage=\count164
-\c@internallinenumber=\count165
-\c@internallinenumbers=\count166
-\quotelinenumbersep=\dimen131
-\bframerule=\dimen132
-\bframesep=\dimen133
-\bframebox=\box55
+\linenopenalty=\count172
+\output=\toks30
+\linenoprevgraf=\count173
+\linenumbersep=\dimen140
+\linenumberwidth=\dimen141
+\c@linenumber=\count174
+\c@pagewiselinenumber=\count175
+\c@LN@truepage=\count176
+\c@internallinenumber=\count177
+\c@internallinenumbers=\count178
+\quotelinenumbersep=\dimen142
+\bframerule=\dimen143
+\bframesep=\dimen144
+\bframebox=\box57
 LaTeX Info: Redefining \\ on input line 3056.
 )
-\c@FV@TrueTabGroupLevel=\count167
-\c@FV@TrueTabCounter=\count168
-\FV@TabBox@Group=\box56
-\FV@TmpLength=\skip72
-\c@FV@HighlightLinesStart=\count169
-\c@FV@HighlightLinesStop=\count170
-\FV@LoopCount=\count171
-\FV@NCharsBox=\box57
-\FV@BreakIndent=\dimen134
-\FV@BreakIndentNChars=\count172
-\FV@BreakSymbolSepLeft=\dimen135
-\FV@BreakSymbolSepLeftNChars=\count173
-\FV@BreakSymbolSepRight=\dimen136
-\FV@BreakSymbolSepRightNChars=\count174
-\FV@BreakSymbolIndentLeft=\dimen137
-\FV@BreakSymbolIndentLeftNChars=\count175
-\FV@BreakSymbolIndentRight=\dimen138
-\FV@BreakSymbolIndentRightNChars=\count176
-\c@FancyVerbLineBreakLast=\count177
-\FV@LineBox=\box58
-\FV@LineIndentBox=\box59
+\c@FV@TrueTabGroupLevel=\count179
+\c@FV@TrueTabCounter=\count180
+\FV@TabBox@Group=\box58
+\FV@TmpLength=\skip75
+\c@FV@HighlightLinesStart=\count181
+\c@FV@HighlightLinesStop=\count182
+\FV@LoopCount=\count183
+\FV@NCharsBox=\box59
+\FV@BreakIndent=\dimen145
+\FV@BreakIndentNChars=\count184
+\FV@BreakSymbolSepLeft=\dimen146
+\FV@BreakSymbolSepLeftNChars=\count185
+\FV@BreakSymbolSepRight=\dimen147
+\FV@BreakSymbolSepRightNChars=\count186
+\FV@BreakSymbolIndentLeft=\dimen148
+\FV@BreakSymbolIndentLeftNChars=\count187
+\FV@BreakSymbolIndentRight=\dimen149
+\FV@BreakSymbolIndentRightNChars=\count188
+\c@FancyVerbLineBreakLast=\count189
+\FV@LineBox=\box60
+\FV@LineIndentBox=\box61
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count178
-\calc@Bcount=\count179
-\calc@Adimen=\dimen139
-\calc@Bdimen=\dimen140
-\calc@Askip=\skip73
-\calc@Bskip=\skip74
+\calc@Acount=\count190
+\calc@Bcount=\count191
+\calc@Adimen=\dimen150
+\calc@Bdimen=\dimen151
+\calc@Askip=\skip76
+\calc@Bskip=\skip77
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count180
-\calc@Cskip=\skip75
+\calc@Ccount=\count192
+\calc@Cskip=\skip78
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
@@ -627,34 +713,34 @@ runsystem(rm -- "listing1.w18")...executed.
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
-\integerpart=\count181
-\decimalpart=\count182
+\integerpart=\count193
+\decimalpart=\count194
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/framed/framed.sty
 Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
-\OuterFrameSep=\skip76
-\fb@frw=\dimen141
-\fb@frh=\dimen142
-\FrameRule=\dimen143
-\FrameSep=\dimen144
+\OuterFrameSep=\skip79
+\fb@frw=\dimen152
+\fb@frh=\dimen153
+\FrameRule=\dimen154
+\FrameSep=\dimen155
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count183
-\float@exts=\toks26
-\float@box=\box60
-\@float@everytoks=\toks27
-\@floatcapt=\box61
+\c@float@type=\count195
+\float@exts=\toks31
+\float@box=\box62
+\@float@everytoks=\toks32
+\@floatcapt=\box63
 )
 \minted@appexistsfile=\read2
-\minted@bgbox=\box62
+\minted@bgbox=\box64
 \minted@code=\write5
-\c@minted@FancyVerbLineTemp=\count184
-\c@minted@pygmentizecounter=\count185
-\@float@every@listing=\toks28
-\c@listing=\count186
+\c@minted@FancyVerbLineTemp=\count196
+\c@minted@pygmentizecounter=\count197
+\@float@every@listing=\toks33
+\c@listing=\count198
 )
 runsystem(mkdir -p _minted-listing1)...executed.
 
@@ -666,10 +752,6 @@ Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
-)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -691,28 +773,28 @@ LaTeX Info: Redefining \% on input line 25.
 )
 \openout1 = `listing1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 45.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on 
-input line 24.
+input line 45.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/T1LinuxLibertineT-TLF.f
 d
@@ -720,11 +802,11 @@ File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Li
 nuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 24.
-LaTeX Info: Redefining \. on input line 24.
-LaTeX Info: Redefining \% on input line 24.
-\c@mv@tabular=\count187
-\c@mv@boldtabular=\count188
+(Font)              scaled to size 10.0pt on input line 45.
+LaTeX Info: Redefining \. on input line 45.
+LaTeX Info: Redefining \% on input line 45.
+\c@mv@tabular=\count199
+\c@mv@boldtabular=\count266
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -760,19 +842,19 @@ LaTeX Info: Redefining \% on input line 24.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring OFF on input line 24.
+\AtBeginShipoutBox=\box65
+Package hyperref Info: Link coloring OFF on input line 45.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count189
+\c@section@level=\count267
 )
-LaTeX Info: Redefining \ref on input line 24.
-LaTeX Info: Redefining \pageref on input line 24.
-LaTeX Info: Redefining \nameref on input line 24.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 
 (./listing1.out) (./listing1.out)
 \@outlinefile=\write6
@@ -781,32 +863,78 @@ LaTeX Info: Redefining \nameref on input line 24.
 
 (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count190
-\scratchdimen=\dimen145
-\scratchbox=\box64
-\nofMPsegments=\count191
-\nofMParguments=\count192
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count193
-\MPscratchDim=\dimen146
-\MPnumerator=\count194
-\makeMPintoPDFobject=\count195
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count268
+\scratchdimen=\dimen156
+\scratchbox=\box66
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen157
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks35
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 27.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/sc' will be
-(Font)              scaled to size 10.0pt on input line 27.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/sc' will be
-(Font)              scaled to size 17.28pt on input line 27.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 36.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 36.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+LaTeX Font Info:    Try loading font information for T1+LinuxBiolinumT-TLF on i
+nput line 48.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/T1LinuxBiolinumT-TLF.fd
+File: T1LinuxBiolinumT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Lin
+uxBiolinumT-TLF.
+)
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/m/n' will be
 (Font)              scaled to size 10.0pt on input line 48.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 48.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/sc' will be
+(Font)              scaled to size 10.0pt on input line 48.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/sc' will be
+(Font)              scaled to size 14.4pt on input line 49.
+Package epstopdf Info: Source file: <../../../images/logouni.eps>
+(epstopdf)                    date: 2018-06-07 14:04:15
+(epstopdf)                    size: 132755 bytes
+(epstopdf)             Output file: <../../../images/logouni-eps-converted-to.p
+df>
+(epstopdf)                    date: 2018-07-06 22:35:44
+(epstopdf)                    size: 50240 bytes
+(epstopdf)             Command: <epstopdf --outfile=../../../images/logouni-eps
+-converted-to.pdf ../../../images/logouni.eps>
+(epstopdf)             \includegraphics on input line 49.
+Package epstopdf Info: Output file is already uptodate.
+<../../../images/logouni-eps-converted-to.pdf, id=4, 195.73125pt x 238.8925pt>
+File: ../../../images/logouni-eps-converted-to.pdf Graphic file (type pdf)
+<use ../../../images/logouni-eps-converted-to.pdf>
+Package pdftex.def Info: ../../../images/logouni-eps-converted-to.pdf  used on 
+input line 49.
+(pdftex.def)             Requested size: 79.6678pt x 97.23573pt.
+<../../../images/logocticblack.png, id=5, 301.125pt x 58.2175pt>
+File: ../../../images/logocticblack.png Graphic file (type png)
+<use ../../../images/logocticblack.png>
+Package pdftex.def Info: ../../../images/logocticblack.png  used on input line 
+50.
+(pdftex.def)             Requested size: 147.16656pt x 28.45274pt.
+LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
+(Font)              scaled to size 12.0pt on input line 55.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
+(Font)              scaled to size 10.0pt on input line 71.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 51.
+(Font)              scaled to size 8.0pt on input line 74.
  (./_minted-listing1/default-pyg-prefix.pygstyle)
 (./_minted-listing1/default.pygstyle)
 (./_minted-listing1/F944CAF01A0ECBF39B867DE3630C8B8CD0F853F35ED41C7866A331EF291
@@ -835,9 +963,9 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 4.
 )
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
-t line 53.
+t line 76.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 53.
+(Font)              scaled to size 10.0pt on input line 76.
 
 (./_minted-listing1/AC0535EAEA95620373E0560541BA2DFC90DEFE2624F4F10EAF0D8F33525
 55B8A.pygtex)
@@ -858,33 +986,34 @@ LaTeX Font Info:    Font shape `TS1/LinuxLibertineMonoT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 3.
 )
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 85.
+(babel)             in language  on input line 108.
  [1
 
 {/Users/User/Library/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
-]
+ <../../../images/logouni-eps-converted-to.pdf> <../../../images/logocticblack.
+png>]
 (./_minted-listing1/4FF236547AEB43F0401399AB425D1E30897A6CFD71E2D1101937D0EED23
 F4CFF.pygtex
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
@@ -950,29 +1079,29 @@ F544B.pygtex)
 (./_minted-listing1/67A1012DBB75049E94F925B854426F294178C8D6C7B36964203BE8F0BD6
 F544B.pygtex)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 171.
+(babel)             in language  on input line 194.
  [2]
 (./_minted-listing1/3B70E313736ADB05DF152FF950918B136654202FAE365FD08FDD4009AD5
 64FF8.pygtex)
@@ -985,111 +1114,113 @@ CC9AA.pygtex)
 (./_minted-listing1/135CE645E0CF36506D9BBC8D348895CA34B38E8DD108C8D021BC9812E57
 96085.pygtex)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 221.
+(babel)             in language  on input line 244.
  [3]
 (./_minted-listing1/98D94CDE65439F363887E2E1851D61B5737C670BDA7A67EA9344EC7BD59
 3A8BF.pygtex)
 (./_minted-listing1/9B87A942C7312D025B1550E8C75F8C1CDF5C5FFB8FB2B118ACCF154484C
 ED618.pygtex)
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 256.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 256.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 256.
+(Font)              scaled to size 7.0pt on input line 279.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 256.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 256.
+(Font)              scaled to size 6.0pt on input line 279.
+<../../../images/Octocat.png, id=64, 803.0pt x 667.49374pt>
+File: ../../../images/Octocat.png Graphic file (type png)
+<use ../../../images/Octocat.png>
+Package pdftex.def Info: ../../../images/Octocat.png  used on input line 279.
+(pdftex.def)             Requested size: 6.31017pt x 5.248pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 281.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 258.
- [4]
+(babel)             in language  on input line 281.
+ [4 <../../../images/Octocat.png>]
 This exam contains 10 questions with 4 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
 This exam has a total of 0 bonus points.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 281.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 281.
 (./listing1.aux
 LaTeX Info: Redefining \. on input line 25.
 LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 281.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 281.
 Package rerunfilecheck Info: File `listing1.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 runsystem(rm listing1.pyg)...executed.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 258.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 281.
  ) 
 Here is how much of TeX's memory you used:
- 12869 strings out of 492646
- 216467 string characters out of 6129563
- 371431 words of memory out of 5000000
- 16475 multiletter control sequences out of 15000+600000
- 57717 words of font info for 49 fonts, out of 8000000 for 9000
+ 13949 strings out of 492646
+ 231228 string characters out of 6129563
+ 390411 words of memory out of 5000000
+ 17471 multiletter control sequences out of 15000+600000
+ 71887 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,8n,37p,1010b,714s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 37i,8n,50p,1010b,712s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_7yry24.enc
 }{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc}
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{
 /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/
-usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_tlukpt.enc}</u
-sr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineMT.pf
-b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertine
-MTB.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLib
-ertineMTO.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/
-LinLibertineT.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libert
-ine/LinLibertineTB.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb>
-Output written on listing1.pdf (4 pages, 318639 bytes).
+usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_25tcsq.enc}{/u
+sr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_jtta5h.enc}</us
+r/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinBiolinumTB.pfb>
+</usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineMT
+.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibert
+ineMTB.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/Lin
+LibertineMTO.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/liberti
+ne/LinLibertineT.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lib
+ertine/LinLibertineTB.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmsy10.pfb>
+Output written on listing1.pdf (4 pages, 455815 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
+ 125 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
  39 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 

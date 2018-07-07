@@ -1,20 +1,21 @@
 % !TeX document-id = {21d95b9e-6149-4bf7-a0af-622fadedeb8b}
 % !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
 \documentclass[spanish,addpoints,answers,a4paper]{exam}
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 \usepackage{libertine}
 \usepackage[tmargin=2cm,rmargin=2cm,lmargin=2cm]{geometry}
-\usepackage{amsmath}
+\usepackage{amsmath,bm}
 \usepackage[shortlabels]{enumitem}
 \usepackage{siunitx}
 \usepackage{multicol}
-\usepackage{hyperref}
 
+\usepackage{graphicx}
+\graphicspath{{../../../images/}}
 \pagestyle{plain}
 
 \usepackage{minted}
+\usepackage{hyperref}
 \renewcommand{\solutiontitle}{\noindent\textbf{Solución}\par\noindent}
 \renewcommand\listingscaption{Listado}
 \newcommand{\unmarkedfntext}[1]{%
@@ -25,21 +26,41 @@
 }
 \spanishdatedel
 \decimalpoint
+
+\def\LOGOUNI{%
+	\begin{picture}(0,0)\unitlength=1cm
+	\put (-13.5,-2.5) {\includegraphics[width=2.8cm]{logouni}}
+	\end{picture}
+}
+
+\def\LOGOCTIC{%
+	\begin{picture}(0,0)\unitlength=1cm
+	\put (-8,-1.2) {\includegraphics[height=1cm]{logocticblack}}
+	\end{picture}
+}
+
+\newcommand{\mychar}{%
+	\begingroup\normalfont
+	\includegraphics[height=\fontcharht\font`\B]{Octocat.png}%
+	\endgroup
+}
 \begin{document}
 
 \begin{center}
-\scshape\bfseries\LARGE\color{blue}
-Lenguaje de programación C\\
-Cuarta lista de ejercicios
+	\sffamily\bfseries\scshape
+	{\Large UNIVERSIDAD NACIONAL DE INGENIERÍA}\LOGOUNI\\
+	Centro de Tecnologías de la Información y Comunicaciones\LOGOCTIC\\
 \end{center}
 
-\begin{center}
-\fbox{\fbox{\parbox{5.5in}
-{\centering
-Responda las preguntas en los espacios provistos en las hojas de preguntas. Los argumentos y la claridad de las respuestas se considerarán en la puntuación final.
-}}}
+\vspace{.8cm}
+
+\begin{center}\sffamily\bfseries\large
+	C/C++ PROGRAMMING LANGUAGE\\
+	TEMA $\bm{4}$: OPERATORS, EXPRESSIONS, AND STATEMENTS 
 \end{center}
-\vspace{0.1in}
+
+\vspace{.5cm}
+\noindent
 \makebox[\textwidth]{Nombres y apellidos:\enspace\hrulefill}
 \vspace{0.2in}
 \makebox[\textwidth]{Nombres y apellidos del instructor:\enspace MSc. César Manuel Sebastián Díez Chirinos.\hfill}
@@ -55,7 +76,7 @@ Responda las preguntas en los espacios provistos en las hojas de preguntas. Los 
 \part \mintinline{c}{Y=3+2*(x=7/2);}
 \end{parts}
 
-\question Corrija este programa silly.\qquad(El / en C significa división)
+\question Corrija los errores:
 
 \begin{minted}{c}
 main()
@@ -122,7 +143,7 @@ printf("%d\n", num);
 
 \question Construya sentencia que hagan lo siguiente:
 
-\begin{enumerate}
+\begin{enumerate}[a.]
 	\item Incremente la variable \mintinline{c}{x} por 10.
 	\item Incremente la variable \mintinline{c}{x} por 1.
 	\item Asigne dos veces la suma de \mintinline{c}{a} y \mintinline{c}{b} a \mintinline{c}{c}.
@@ -130,8 +151,10 @@ printf("%d\n", num);
 \end{enumerate}
 
 \end{questions}
+
 \begin{flushright}\bfseries
 Centro de Tecnologías de la Información y Comunicaciones (CTIC)\\[2mm]
-\today\unmarkedfntext{Los archivos fuente lo encuentra  \href{https://github.com/carlosal1015/C-Programming}{\textbf{aquí}.}}
+\today\unmarkedfntext{Código disponible en \href{https://github.com/carlosal1015/C-Programming}{\mychar{}}.}
 \end{flushright}
+
 \end{document}

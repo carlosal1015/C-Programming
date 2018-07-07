@@ -5,15 +5,17 @@
 \usepackage[spanish]{babel}
 \usepackage{libertine}
 \usepackage[tmargin=2cm,rmargin=2cm,lmargin=2cm]{geometry}
-\usepackage{amsmath}
+\usepackage{amsmath,bm}
 \usepackage[shortlabels]{enumitem}
 \usepackage{siunitx}
 \usepackage{multicol}
-\usepackage{hyperref}
 
+\usepackage{graphicx}
+\graphicspath{{../../../images/}}
 \pagestyle{plain}
 
 \usepackage{minted}
+\usepackage{hyperref}
 \renewcommand{\solutiontitle}{\noindent\textbf{Solución}\par\noindent}
 \renewcommand\listingscaption{Listado}
 \newcommand{\unmarkedfntext}[1]{%
@@ -24,21 +26,41 @@
 }
 \spanishdatedel
 \decimalpoint
+
+\def\LOGOUNI{%
+	\begin{picture}(0,0)\unitlength=1cm
+	\put (-13.5,-2.5) {\includegraphics[width=2.8cm]{logouni}}
+	\end{picture}
+}
+
+\def\LOGOCTIC{%
+	\begin{picture}(0,0)\unitlength=1cm
+	\put (-8,-1.2) {\includegraphics[height=1cm]{logocticblack}}
+	\end{picture}
+}
+
+\newcommand{\mychar}{%
+	\begingroup\normalfont
+	\includegraphics[height=\fontcharht\font`\B]{Octocat.png}%
+	\endgroup
+}
 \begin{document}
 
 \begin{center}
-\scshape\bfseries\LARGE\color{blue}
-Lenguaje de programación C\\
-Segunda lista de ejercicios
+	\sffamily\bfseries\scshape
+	{\Large UNIVERSIDAD NACIONAL DE INGENIERÍA}\LOGOUNI\\
+	Centro de Tecnologías de la Información y Comunicaciones\LOGOCTIC\\
 \end{center}
 
-\begin{center}
-\fbox{\fbox{\parbox{5.5in}
-{\centering
-Responda las preguntas en los espacios provistos en las hojas de preguntas. Los argumentos y la claridad de las respuestas se considerarán en la puntuación final.
-}}}
+\vspace{.8cm}
+
+\begin{center}\sffamily\bfseries\large
+C/C++ PROGRAMMING LANGUAGE\\
+TEMA $\bm{2}$: DATOS Y C
 \end{center}
-\vspace{0.1in}
+
+\vspace{.5cm}
+\noindent
 \makebox[\textwidth]{Nombres y apellidos:\enspace\hrulefill}
 \vspace{0.2in}
 \makebox[\textwidth]{Nombres y apellidos del instructor:\enspace MSc. César Manuel Sebastián Díez Chirinos.\hfill}
@@ -54,24 +76,7 @@ Responda las preguntas en los espacios provistos en las hojas de preguntas. Los 
 \end{parts}
 
 \begin{solution}
-\begin{multicols}{2}
-\begin{enumerate}[(a)]
 
-\item Imprimirá:
-
-\begin{minted}{bash}
-pc@CTIC:~$ Baa Baa Black Sheep
-\end{minted}
-
-\item Imprimirá:
-
-\begin{minted}{bash}
-pc@CTIC:~$ Have you any woo?
-pc@CTIC:~$ 
-\end{minted}
-
-\end{enumerate}
-\end{multicols}
 \end{solution}
 
 \question Virgila Ann Xenopod ha inventado un progrma cargado de errores. Corríjale sus errores:
@@ -85,6 +90,10 @@ g=e21;
 tax=rate*g;
 }
 \end{minted}
+
+\begin{solution}
+
+\end{solution}
 
 \question Identifique el tipo de datos (usados en declaraciones de sentencias) y el formato específico \mintinline{c}{printf()} para cada constante:
 
@@ -111,6 +120,10 @@ tax=rate*g;
 \end{tabular}
 \end{table}
 
+\begin{solution}
+	
+\end{solution}
+
 \question Corrija este programa silly.\qquad(El / en C significa división)
 
 \begin{minted}{c}
@@ -124,26 +137,55 @@ printf("Esto implica que hay %f cows",cows)
 }
 \end{minted}
 
+\begin{solution}
+	
+\end{solution}
+
 \question Encuentre que hace su sistema con desbordamiento de enteros, desbordamiento de puntos flotantes y el opuesto de desbordamiento de puntos flotantes.
 
+\begin{solution}
+	
+\end{solution}
+
 \question Escriba un programa que pregunte cómo ingresa un valor en código \textbf{ASCII}, como $66$, e imprima el carácter en código \textbf{ASCII}.
+
+\begin{solution}
+	
+\end{solution}
 
 \question Escriba un programa que informe una alerta e imprima el siguiente texto:
 
 Asustada por el sonido, Sally gritó: \textbf{``Por la gran calabaza, ¡Qué fue eso!''}
 
+\begin{solution}
+	
+\end{solution}
+
 \question Escriba un programa que lea un número de punto flotante e imprima primero en notación decimal y luego en notación exponencial. Puede tener esta estructura:
 
 La entrada es $21.290000$ o $2.129000\text{e}+001$.
 
+\begin{solution}
+	
+\end{solution}
+
 \question Aproximadamente hay $3,156\times10^{7}$ segundos en un año. Escriba un programa que solicite su edad en años y visualice su equivalente en segundos.
 
-\question Las masas de una molécula simple tiene unos $3,0\times10^{-23}$ gramos. Un cuarto de agua es unos $950$ gramos. Escriba un programa que solicite la cantidad de agua, en cuartos, y visualice el número de moléculas de agua en esa cantidad. 
+\begin{solution}
+	
+\end{solution}
+
+\question Las masas de una molécula simple tiene unos $3,0\times10^{-23}$ gramos. Un cuarto de agua es unos $950$ gramos. Escriba un programa que solicite la cantidad de agua, en cuartos, y visualice el número de moléculas de agua en esa cantidad.
+
+\begin{solution}
+	
+\end{solution}
+
 \end{questions}
 
 \begin{flushright}\bfseries
 Centro de Tecnologías de la Información y Comunicaciones (CTIC)\\[2mm]
-\today\unmarkedfntext{Los archivos fuente lo encuentra  \href{https://github.com/carlosal1015/C-Programming}{\textbf{aquí}.}}
+\today\unmarkedfntext{Código disponible en \href{https://github.com/carlosal1015/C-Programming}{\mychar{}}.}
 \end{flushright}
 
 \end{document}
