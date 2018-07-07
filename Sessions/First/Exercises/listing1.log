@@ -1,11 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.9)  6 JUL 2018 14:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.6.18)  6 JUL 2018 20:31
 entering extended mode
- restricted \write18 enabled.
- file:line:error style messages enabled.
+ \write18 enabled.
  %&-line parsing enabled.
-**/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex
-
-(/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex
+**listing1.tex
+(./listing1.tex
 LaTeX2e <2018-04-01> patch level 5
 (/usr/local/texlive/2018/texmf-dist/tex/latex/exam/exam.cls
 Document Class: exam 2017/12/17 Version 2.603 by Philip Hirschhorn
@@ -105,11 +103,6 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \exam@FrameRule=\dimen104
 \exam@FrameSep=\dimen105
 )
-(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2018/04/06 v1.3b Input encoding file
-\inpenc@prehook=\toks19
-\inpenc@posthook=\toks20
-)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
@@ -134,7 +127,7 @@ File: babel.def 2018/06/05 3.22 Babel common definitions
 (/usr/local/texlive/2018/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@dirlevel=\count130
 )
-\es@quottoks=\toks21
+\es@quottoks=\toks19
 \es@quotdepth=\count131
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
@@ -157,8 +150,8 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks22
-\XKV@tempa@toks=\toks23
+\XKV@toks=\toks20
+\XKV@tempa@toks=\toks21
 
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xkeyval/keyval.tex))
 \XKV@depth=\count132
@@ -364,14 +357,14 @@ Package ifvtex Info: VTeX not detected.
 \Gm@layoutheight=\dimen112
 \Gm@layouthoffset=\dimen113
 \Gm@layoutvoffset=\dimen114
-\Gm@dimlist=\toks24
+\Gm@dimlist=\toks22
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\enitkv@toks@=\toks25
+\enitkv@toks@=\toks23
 \labelindent=\skip68
 \enit@outerparindent=\dimen115
-\enit@toks=\toks26
+\enit@toks=\toks24
 \enit@inbox=\box27
 \enitdp@description=\count136
 )
@@ -564,7 +557,7 @@ tim
 (/usr/local/texlive/2018/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count160
-\output=\toks27
+\output=\toks25
 \linenoprevgraf=\count161
 \linenumbersep=\dimen129
 \linenumberwidth=\dimen130
@@ -616,7 +609,7 @@ LaTeX Info: Redefining \addtolength on input line 81.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
 Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
-Package shellesc Info: Restricted shell escape enabled on input line 69.
+Package shellesc Info: Unrestricted shell escape enabled on input line 67.
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/ifplatform/ifplatform.sty
 Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
@@ -624,11 +617,14 @@ Package: ifplatform 2017/10/13 v0.4a Testing for the operating system
 (/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/catchfile.sty
 Package: catchfile 2016/05/16 v1.7 Catch the contents of a file (HO)
 )
+runsystem(uname -s > "listing1.w18")...executed.
 
-Package ifplatform Warning: 
-    shell escape is disabled, so I can only detect \ifwindows.
 
-) (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
+(./listing1.w18)
+runsystem(rm -- "listing1.w18")...executed.
+
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.sty
 (/usr/local/texlive/2018/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
 \integerpart=\count181
@@ -647,9 +643,9 @@ Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
 (/usr/local/texlive/2018/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count183
-\float@exts=\toks28
+\float@exts=\toks26
 \float@box=\box60
-\@float@everytoks=\toks29
+\@float@everytoks=\toks27
 \@floatcapt=\box61
 )
 \minted@appexistsfile=\read2
@@ -657,24 +653,11 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \minted@code=\write5
 \c@minted@FancyVerbLineTemp=\count184
 \c@minted@pygmentizecounter=\count185
-\@float@every@listing=\toks30
+\@float@every@listing=\toks28
 \c@listing=\count186
 )
-runsystem(mkdir -p _minted-listing1)...disabled (restricted).
+runsystem(mkdir -p _minted-listing1)...executed.
 
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-6: Package minted Error: You must invoke LaTeX with the -shell-escape flag.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.16 \renewcommand
-                  {\solutiontitle}{\noindent\textbf{Solución}\par\noindent}
-Pass the -shell-escape flag to LaTeX. Refer to the minted.sty documentation for
- more information.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
@@ -697,48 +680,39 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-runsystem(which pygmentize && touch listing1.aex)...disabled (restricted).
+runsystem(which pygmentize && touch listing1.aex)...executed.
+
+runsystem(rm listing1.aex)...executed.
 
 
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-5: Package minted Error: You must have `pygmentize' installed to use this packa
-ge.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.25 \begin{document}
-                     
-Refer to the installation instructions in the minted documentation for more inf
-ormation.
-
-(./listing1.aux)
+(./listing1.aux
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
+)
 \openout1 = `listing1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 24.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 24.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 LaTeX Font Info:    Try loading font information for T1+LinuxLibertineT-TLF on 
-input line 25.
+input line 24.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/T1LinuxLibertineT-TLF.f
 d
@@ -746,9 +720,9 @@ File: T1LinuxLibertineT-TLF.fd 2017/03/20 (autoinst) Font definitions for T1/Li
 nuxLibertineT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 25.
-LaTeX Info: Redefining \. on input line 25.
-LaTeX Info: Redefining \% on input line 25.
+(Font)              scaled to size 10.0pt on input line 24.
+LaTeX Info: Redefining \. on input line 24.
+LaTeX Info: Redefining \% on input line 24.
 \c@mv@tabular=\count187
 \c@mv@boldtabular=\count188
 
@@ -787,7 +761,7 @@ LaTeX Info: Redefining \% on input line 25.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring OFF on input line 25.
+Package hyperref Info: Link coloring OFF on input line 24.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -796,9 +770,11 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count189
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 24.
+LaTeX Info: Redefining \pageref on input line 24.
+LaTeX Info: Redefining \nameref on input line 24.
+
+(./listing1.out) (./listing1.out)
 \@outlinefile=\write6
 \openout6 = `listing1.out'.
 
@@ -810,56 +786,33 @@ LaTeX Info: Redefining \nameref on input line 25.
 \scratchbox=\box64
 \nofMPsegments=\count191
 \nofMParguments=\count192
-\everyMPshowfont=\toks31
+\everyMPshowfont=\toks29
 \MPscratchCnt=\count193
 \MPscratchDim=\dimen146
 \MPnumerator=\count194
 \makeMPintoPDFobject=\count195
-\everyMPtoPDFconversion=\toks32
+\everyMPtoPDFconversion=\toks30
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 28.
+(Font)              scaled to size 10.0pt on input line 27.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/sc' will be
-(Font)              scaled to size 10.0pt on input line 28.
+(Font)              scaled to size 10.0pt on input line 27.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/sc' will be
-(Font)              scaled to size 17.28pt on input line 28.
+(Font)              scaled to size 17.28pt on input line 27.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 37.
+(Font)              <7> on input line 36.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 37.
+(Font)              <5> on input line 36.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 49.
+(Font)              scaled to size 10.0pt on input line 48.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 52.
+(Font)              scaled to size 8.0pt on input line 51.
  (./_minted-listing1/default-pyg-prefix.pygstyle)
 (./_minted-listing1/default.pygstyle)
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/F944CAF01A0ECBF39B867DE3630C8B8CD0F853F35ED41C7866A331EF291AB620.pyg
-tex exercise1_1.c)...disabled (restricted).
-
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:5
-3: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.53 \inputminted{c}{exercise1_1.c}
-                                   
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
-t line 54.
+(./_minted-listing1/F944CAF01A0ECBF39B867DE3630C8B8CD0F853F35ED41C7866A331EF291
+AB620.pygtex
 LaTeX Font Info:    Try loading font information for T1+LinuxLibertineMonoT-TLF
- on input line 54.
+ on input line 1.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/libertine/T1LinuxLibertineMonoT-T
 LF.fd
@@ -867,37 +820,32 @@ File: T1LinuxLibertineMonoT-TLF.fd 2017/03/20 (autoinst) Font definitions for T
 1/LinuxLibertineMonoT-TLF.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 54.
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/AC0535EAEA95620373E0560541BA2DFC90DEFE2624F4F10EAF0D8F3352555B8A.pyg
-tex exercise1_2.c)...disabled (restricted).
+(Font)              scaled to size 8.0pt on input line 1.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/it' in size <8> no
+t available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/m/sl' tried instead 
+on input line 2.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/sl' will be
+(Font)              scaled to size 8.0pt on input line 2.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/bx/n' in size <8> no
+t available
+(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/b/n' tried instead o
+n input line 4.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/b/n' will be
+(Font)              scaled to size 8.0pt on input line 4.
+)
+Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
+t line 53.
+LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
+(Font)              scaled to size 10.0pt on input line 53.
 
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:6
-7: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.67 \inputminted{c}{exercise1_2.c}
-                                   
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(./_minted-listing1/AC0535EAEA95620373E0560541BA2DFC90DEFE2624F4F10EAF0D8F33525
+55B8A.pygtex)
 \openout3 = `listing1.pyg'.
 
 
 (./_minted-listing1/3EE7046EE6EC22B6B3667469846A4C0B4178C8D6C7B36964203BE8F0BD6
 F544B.pygtex
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 1.
 LaTeX Font Info:    Try loading font information for TS1+LinuxLibertineMonoT-TL
 F on input line 3.
 
@@ -908,36 +856,40 @@ TS1/LinuxLibertineMonoT-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/LinuxLibertineMonoT-TLF/m/n' will be
 (Font)              scaled to size 8.0pt on input line 3.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/bx/n' in size <8> no
-t available
-(Font)              Font shape `T1/LinuxLibertineMonoT-TLF/b/n' tried instead o
-n input line 7.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 7.
 )
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/4FF236547AEB43F0401399AB425D1E30897A6CFD71E2D1101937D0EED23F4CFF.pyg
-tex exercise1_3.c)...disabled (restricted).
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 85.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 85.
+ [1
 
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:9
-2: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 \inputminted[linenos]{c}{exercise1_3.c}
-                                            
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+{/Users/User/Library/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+]
+(./_minted-listing1/4FF236547AEB43F0401399AB425D1E30897A6CFD71E2D1101937D0EED23
+F4CFF.pygtex
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 2.
+)
 \openout5 = `listing1.pyg'.
 
 
@@ -955,146 +907,8 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/b/n' will be
 
 (./_minted-listing1/861D1625C4077D5BE0E206E40FC8188980ABFBB141C9A580AA0093E9385
 5FB4E.pygtex)
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/8D92E02967157A1C56C63FF512A357E1F6BCF755A238446DA05D8230981E68BA.pyg
-tex exercise1_3a.c)...disabled (restricted).
-
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-15: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.115 \inputminted{c}{exercise1_3a.c}
-                                     
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-16: Missing $ inserted.
-<inserted text> 
-                $
-l.116 \caption{Programa \texttt{exercise1_3a.c}.}
-                                                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-16: Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.116 \caption{Programa \texttt{exercise1_3a.c}.}
-                                                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-16: Extra }, or forgotten $.
-<recently read> }
-                 
-l.116 \caption{Programa \texttt{exercise1_3a.c}.}
-                                                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-17: Extra }, or forgotten $.
-\reserved@c ->\egroup 
-                      
-l.117 \label
-            {lst:3a}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-18: Missing $ inserted.
-<inserted text> 
-                $
-l.118 \end{listing}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-18: Missing } inserted.
-<inserted text> 
-                }
-l.118 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-18: Missing } inserted.
-<inserted text> 
-                }
-l.118 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-18: Missing } inserted.
-<inserted text> 
-                }
-l.118 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 120.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 120.
-[1
-
-{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./_minted-listing1/8D92E02967157A1C56C63FF512A357E1F6BCF755A238446DA05D8230981
+E68BA.pygtex)
 \openout5 = `listing1.pyg'.
 
 
@@ -1135,649 +949,147 @@ F544B.pygtex)
 
 (./_minted-listing1/67A1012DBB75049E94F925B854426F294178C8D6C7B36964203BE8F0BD6
 F544B.pygtex)
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/3B70E313736ADB05DF152FF950918B136654202FAE365FD08FDD4009AD564FF8.pyg
-tex exercise1_5.c)...disabled (restricted).
-
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-80: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.180 \inputminted{c}{exercise1_5.c}
-                                    
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-81: Missing $ inserted.
-<inserted text> 
-                $
-l.181 \caption{Programa \texttt{exercise1_5.c}.}
-                                                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-81: Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.181 \caption{Programa \texttt{exercise1_5.c}.}
-                                                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-81: Extra }, or forgotten $.
-<recently read> }
-                 
-l.181 \caption{Programa \texttt{exercise1_5.c}.}
-                                                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-82: Extra }, or forgotten $.
-\reserved@c ->\egroup 
-                      
-l.182 \label
-            {lst:5}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-83: Missing $ inserted.
-<inserted text> 
-                $
-l.183 \end{listing}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-83: Missing } inserted.
-<inserted text> 
-                }
-l.183 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-83: Missing } inserted.
-<inserted text> 
-                }
-l.183 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-83: Missing } inserted.
-<inserted text> 
-                }
-l.183 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/CA5AAE8FF1FF0C3AE0CB33E5FD43390EBDBA3CC899BB29CE7B91658A5FD8E417.pyg
-tex exercise1_6a.c)...disabled (restricted).
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-91: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.191 \inputminted{c}{exercise1_6a.c}
-                                     .}
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-93: Extra }, or forgotten \endgroup.
-\@endfloatbox ...pagefalse \outer@nobreak \egroup 
-                                                  \color@endbox 
-l.193 \end{listing}
-                   
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/EA92AD11B0EBB1B77796759D4CC128A4F9C619D32368AD68FA5E7E61FD1ABCDD.pyg
-tex exercise1_6b.c)...disabled (restricted).
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-96: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 \inputminted{c}{exercise1_6b.c}
-                                     
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-97: Missing $ inserted.
-<inserted text> 
-                $
-l.197 \caption{Programa \texttt{exercise1_6b.c}.}
-                                                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-97: Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.197 \caption{Programa \texttt{exercise1_6b.c}.}
-                                                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-97: Extra }, or forgotten $.
-<recently read> }
-                 
-l.197 \caption{Programa \texttt{exercise1_6b.c}.}
-                                                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-98: Extra }, or forgotten $.
-\reserved@c ->\egroup 
-                      
-l.198 \label
-            {lst:6b}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-99: Missing $ inserted.
-<inserted text> 
-                $
-l.199 \end{listing}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-99: Missing } inserted.
-<inserted text> 
-                }
-l.199 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-99: Missing } inserted.
-<inserted text> 
-                }
-l.199 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:1
-99: Missing } inserted.
-<inserted text> 
-                }
-l.199 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/ACF73BE4E4E36A55F839D830C699DB8D6D9FC661FF765E23826266C4922CC9AA.pyg
-tex exercise1_7.c)...disabled (restricted).
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-07: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.207 \inputminted{c}{exercise1_7.c}
-                                    
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 216.
+(babel)             in language  on input line 171.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 216.
-[2]
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/135CE645E0CF36506D9BBC8D348895CA34B38E8DD108C8D021BC9812E5796085.pyg
-tex exercise1_8.c)...disabled (restricted).
-
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-18: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.218 \inputminted{c}{exercise1_8.c}
-                                    
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-19: Missing $ inserted.
-<inserted text> 
-                $
-l.219 \caption{Programa \texttt{exercise1_8.c}.}
-                                                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-19: Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.219 \caption{Programa \texttt{exercise1_8.c}.}
-                                                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-19: Extra }, or forgotten $.
-<recently read> }
-                 
-l.219 \caption{Programa \texttt{exercise1_8.c}.}
-                                                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-20: Extra }, or forgotten $.
-\reserved@c ->\egroup 
-                      
-l.220 \label
-            {lst:8}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-21: Missing $ inserted.
-<inserted text> 
-                $
-l.221 \end{listing}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-21: Missing } inserted.
-<inserted text> 
-                }
-l.221 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-21: Missing } inserted.
-<inserted text> 
-                }
-l.221 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-21: Missing } inserted.
-<inserted text> 
-                }
-l.221 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/98D94CDE65439F363887E2E1851D61B5737C670BDA7A67EA9344EC7BD593A8BF.pyg
-tex exercise1_9.c)...disabled (restricted).
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-37: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.237 \inputminted{c}{exercise1_9.c}
-                                    
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-38: Missing $ inserted.
-<inserted text> 
-                $
-l.238 \caption{Programa \texttt{exercise1_9.c}.}
-                                                
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-38: Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.238 \caption{Programa \texttt{exercise1_9.c}.}
-                                                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-38: Extra }, or forgotten $.
-<recently read> }
-                 
-l.238 \caption{Programa \texttt{exercise1_9.c}.}
-                                                
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-39: Extra }, or forgotten $.
-\reserved@c ->\egroup 
-                      
-l.239 \label
-            {lst:9}
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-40: Missing $ inserted.
-<inserted text> 
-                $
-l.240 \end{listing}
-                   
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-40: Missing } inserted.
-<inserted text> 
-                }
-l.240 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-40: Missing } inserted.
-<inserted text> 
-                }
-l.240 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-40: Missing } inserted.
-<inserted text> 
-                }
-l.240 \end{listing}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-runsystem(pygmentize -l c -f latex -P commandprefix=PYG -F tokenmerge -o _minte
-d-listing1/9B87A942C7312D025B1550E8C75F8C1CDF5C5FFB8FB2B118ACCF154484CED618.pyg
-tex exercise1_10.c)...disabled (restricted).
-
-
-/home/carlosal1015/GitHub/C-Programming/Sessions/First/Exercises/listing1.tex:2
-48: Package minted Error: Missing Pygments output; \inputminted was
-probably given a file that does not exist--otherwise, you may need 
-the outputdir package option, or may be using an incompatible build tool,
-or may be using frozencache with a missing file.
-
-See the minted package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.248 \inputminted{c}{exercise1_10.c}
-                                     
-This could be caused by using -output-directory or -aux-directory 
-without setting minted's outputdir, or by using a build tool that 
-changes paths in ways minted cannot detect, 
-or using frozencache with a missing file.
-
+(babel)             in language  on input line 171.
+ [2]
+(./_minted-listing1/3B70E313736ADB05DF152FF950918B136654202FAE365FD08FDD4009AD5
+64FF8.pygtex)
+(./_minted-listing1/CA5AAE8FF1FF0C3AE0CB33E5FD43390EBDBA3CC899BB29CE7B91658A5FD
+8E417.pygtex)
+(./_minted-listing1/EA92AD11B0EBB1B77796759D4CC128A4F9C619D32368AD68FA5E7E61FD1
+ABCDD.pygtex)
+(./_minted-listing1/ACF73BE4E4E36A55F839D830C699DB8D6D9FC661FF765E23826266C4922
+CC9AA.pygtex)
+(./_minted-listing1/135CE645E0CF36506D9BBC8D348895CA34B38E8DD108C8D021BC9812E57
+96085.pygtex)
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 221.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 221.
+ [3]
+(./_minted-listing1/98D94CDE65439F363887E2E1851D61B5737C670BDA7A67EA9344EC7BD59
+3A8BF.pygtex)
+(./_minted-listing1/9B87A942C7312D025B1550E8C75F8C1CDF5C5FFB8FB2B118ACCF154484C
+ED618.pygtex)
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 257.
+(Font)              scaled to size 7.0pt on input line 256.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 257.
+(Font)              <8> on input line 256.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 257.
+(Font)              <6> on input line 256.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 257.
+(Font)              scaled to size 6.0pt on input line 256.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 8.0pt on input line 257.
+(Font)              scaled to size 8.0pt on input line 256.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 259.
+(babel)             in language  on input line 258.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 259.
-[3]
+(babel)             in language  on input line 258.
+ [4]
 This exam contains 10 questions with 4 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
 This exam has a total of 0 bonus points.
-
-Class exam Warning: Point totals have changed. Rerun to get point totals right.
-
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 259.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 259.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 258.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 258.
 (./listing1.aux
-LaTeX Info: Redefining \. on input line 27.
-LaTeX Info: Redefining \% on input line 27.
+LaTeX Info: Redefining \. on input line 25.
+LaTeX Info: Redefining \% on input line 25.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 259.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 259.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 258.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 258.
+Package rerunfilecheck Info: File `listing1.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+runsystem(rm listing1.pyg)...executed.
 
-
-Package rerunfilecheck Warning: File `listing1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `listing1.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-runsystem(rm listing1.pyg)...disabled (restricted).
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 259.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 258.
  ) 
 Here is how much of TeX's memory you used:
- 12848 strings out of 492646
- 214786 string characters out of 6129549
- 367005 words of memory out of 5000000
- 16482 multiletter control sequences out of 15000+600000
- 51714 words of font info for 45 fonts, out of 8000000 for 9000
+ 12869 strings out of 492646
+ 216467 string characters out of 6129563
+ 371431 words of memory out of 5000000
+ 16475 multiletter control sequences out of 15000+600000
+ 57717 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,8n,37p,1075b,714s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc
-}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_7yry24.enc}
+ 37i,8n,37p,1010b,714s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_7yry24.enc
+}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_d6jdyt.enc}
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_nh77jq.enc}{
 /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_76gpa5.enc}{/
 usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_tlukpt.enc}</u
 sr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertineMT.pf
 b></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLibertine
 MTB.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/LinLib
-ertineT.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/Li
-nLibertineTB.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmsy10.pfb>
-Output written on listing1.pdf (3 pages, 269337 bytes).
+ertineMTO.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libertine/
+LinLibertineT.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/libert
+ine/LinLibertineTB.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb>
+Output written on listing1.pdf (4 pages, 318639 bytes).
 PDF statistics:
- 99 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 38 named destinations out of 1000 (max. 500000)
+ 107 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
+ 39 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

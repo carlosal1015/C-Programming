@@ -1,7 +1,6 @@
 % !TeX document-id = {21d95b9e-6149-4bf7-a0af-622fadedeb8b}
 % !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
 \documentclass[spanish,addpoints,answers,a4paper]{exam}
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 \usepackage{libertine}
@@ -95,19 +94,19 @@ tax=rate*g;
 	\hline
 	\multicolumn{2}{|c|}{\bfseries Constant} & \textbf{Type} & \textbf{Specifier}	\\
 	\hline
-	A	&	012 	& 	& 	\\
+	A	&	\inputminted{c}{012} 	& 	& 	\\
 	\hline
-	B 	&	2.9e05L	&	&	\\
+	B 	&	\inputminted{c}{2.9e05L}&	&	\\
 	\hline
-	C	&	's'		& 	&	\\
+	C	&	\inputminted{c}{'s'}	& 	&	\\
 	\hline
-	D	&	10000 	& 	&	\\
+	D	&	\inputminted{c}{10000} 	& 	&	\\
 	\hline
-	E	&	'$\backslash$n' &	&	\\
+	E	&	\inputminted{c}{'\n'} 	&	&	\\
 	\hline
-	F	&	20.0f	&	&	\\
+	F	&	\inputminted{c}{20.0f}	&	&	\\
 	\hline
-	G	&	0x44	&	&	\\
+	G	&	\inputminted{c}{0x44}	&	&	\\
 	\hline
 \end{tabular}
 \end{table}
@@ -141,8 +140,10 @@ La entrada es $21.290000$ o $2.129000\text{e}+001$.
 
 \question Las masas de una molécula simple tiene unos $3,0\times10^{-23}$ gramos. Un cuarto de agua es unos $950$ gramos. Escriba un programa que solicite la cantidad de agua, en cuartos, y visualice el número de moléculas de agua en esa cantidad. 
 \end{questions}
+
 \begin{flushright}\bfseries
 Centro de Tecnologías de la Información y Comunicaciones (CTIC)\\[2mm]
 \today\unmarkedfntext{Los archivos fuente lo encuentra  \href{https://github.com/carlosal1015/C-Programming}{\textbf{aquí}.}}
 \end{flushright}
+
 \end{document}
