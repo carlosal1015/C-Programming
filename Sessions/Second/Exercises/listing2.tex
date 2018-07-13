@@ -76,7 +76,13 @@ TEMA $\bm{2}$: DATOS Y C
 \end{parts}
 
 \begin{solution}
-
+Para los datos mencionados arriba emplearía los siguientes tipos de datos:
+\begin{enumerate}[(a)]
+	\item \mintinline{c}{int}, pues representa una cantidad de personas.
+	\item \mintinline{c}{float}, pues una balanza registrar sus valores con decimales.
+	\item \mintinline{c}{int}, es un valor que se puede contar, un número entero.
+	\item \mintinline{c}{int}, también es un valor numerable.
+\end{enumerate}
 \end{solution}
 
 \question Virgila Ann Xenopod ha inventado un progrma cargado de errores. Corríjale sus errores:
@@ -92,7 +98,12 @@ tax=rate*g;
 \end{minted}
 
 \begin{solution}
-
+\begin{listing}[H]
+	\footnotesize
+	\inputminted{c}{exercise2_2.c}
+	\caption{Programa \texttt{exercise2\_2.c}.}
+	\label{lst:2.2}
+\end{listing}
 \end{solution}
 
 \question Identifique el tipo de datos (usados en declaraciones de sentencias) y el formato específico \mintinline{c}{printf()} para cada constante:
@@ -121,7 +132,30 @@ tax=rate*g;
 \end{table}
 
 \begin{solution}
-	
+Se presenta a continuación la tabla completa.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|c|c|}
+		\hline
+		\multicolumn{2}{|c|}{\bfseries Constant} & \textbf{Type} & \textbf{Specifier}	\\
+		\hline
+		A	&	\mintinline{c}{012} 	& \mintinline{c}{int}	& \mintinline{c}{%d}	\\
+		\hline
+		B 	&	\mintinline{c}{2.9e05L}& \mintinline{c}{long}&	\mintinline{c}{%ld}\\
+		\hline
+		C	&	\mintinline{c}{'s'}	& \mintinline{c}{char}	&	\mintinline{c}{%c}\\
+		\hline
+		D	&	\mintinline{c}{10000} 	& \mintinline{c}{int}	&	\mintinline{c}{%d}\\
+		\hline
+		E	&	\mintinline{c}{'\n'} 	& \mintinline{c}{char}	&	\mintinline{c}{%s}\\
+		\hline
+		F	&	\mintinline{c}{20.0f}	&	\mintinline{c}{float}&	\mintinline{c}{%f}\\
+		\hline
+		G	&	\mintinline{c}{0x44}	&	\mintinline{c}{unsigned int}&	\mintinline{c}{%#X}\\
+		\hline
+		\end{tabular}
+\end{table}
 \end{solution}
 
 \question Corrija este programa silly.\qquad(El / en C significa división)
@@ -138,19 +172,34 @@ printf("Esto implica que hay %f cows",cows)
 \end{minted}
 
 \begin{solution}
-	
+\begin{listing}[H]
+	\footnotesize
+	\inputminted{c}{exercise2_4.c}
+	\caption{Programa \texttt{exercise2\_4.c}.}
+	\label{lst:2.4}
+\end{listing}
 \end{solution}
 
 \question Encuentre que hace su sistema con desbordamiento de enteros, desbordamiento de puntos flotantes y el opuesto de desbordamiento de puntos flotantes.
 
 \begin{solution}
-	
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise2_5.c}
+\caption{Programa \texttt{exercise2\_5.c}.}
+\label{lst:2.5}
+\end{listing}
 \end{solution}
 
 \question Escriba un programa que pregunte cómo ingresa un valor en código \textbf{ASCII}, como $66$, e imprima el carácter en código \textbf{ASCII}.
 
 \begin{solution}
-	
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise2_6.c}
+\caption{Programa \texttt{exercise2\_6.c}.}
+\label{lst:2.6}
+\end{listing}
 \end{solution}
 
 \question Escriba un programa que informe una alerta e imprima el siguiente texto:
@@ -158,7 +207,12 @@ printf("Esto implica que hay %f cows",cows)
 Asustada por el sonido, Sally gritó: \textbf{``Por la gran calabaza, ¡Qué fue eso!''}
 
 \begin{solution}
-	
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise2_7.c}
+\caption{Programa \texttt{exercise2\_7.c}.}
+\label{lst:2.7}
+\end{listing}	
 \end{solution}
 
 \question Escriba un programa que lea un número de punto flotante e imprima primero en notación decimal y luego en notación exponencial. Puede tener esta estructura:
@@ -166,7 +220,12 @@ Asustada por el sonido, Sally gritó: \textbf{``Por la gran calabaza, ¡Qué fue
 La entrada es $21.290000$ o $2.129000\text{e}+001$.
 
 \begin{solution}
-	
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise2_8.c}
+\caption{Programa \texttt{exercise2\_8.c}.}
+\label{lst:2.8}
+\end{listing}	
 \end{solution}
 
 \question Aproximadamente hay $3,156\times10^{7}$ segundos en un año. Escriba un programa que solicite su edad en años y visualice su equivalente en segundos.
