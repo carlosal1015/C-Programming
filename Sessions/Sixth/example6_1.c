@@ -6,7 +6,7 @@ main()
 	long sum = 0L;	/* inicializa sum a cero */
 	int status, i=1;
 	
-	printf("Ingrese un número a ser sumado (q para terminar):\n");
+	printf("Ingrese un nÃºmero a ser sumado (q para terminar):\n");
 	status = scanf("%ld", &num);	// reconoce al long.
 	while (status==1)	/* == es decir, "es igual a" */
 	{
