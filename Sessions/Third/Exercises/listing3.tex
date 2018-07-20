@@ -69,12 +69,39 @@ TEMA $\bm{3}$: CHARACTER STRINGS AND FORMATTED I/0
 
 \question Escriba un programa que muestre cada flag visto en este capítulo.
 
+\begin{solution}
+En el programa \ref{lst:3.1} se muestra los cuatro tipos de \textit{flag}:
+
+\begin{enumerate}
+	\item Los valores firmados se muestran con un signo más, si es positivo, y con un signo menos, si es negativo.
+	\item Los valores firmados se muestran con un espacio inicial (pero sin signo) si es positivo y con un signo menos si es negativo. Una bandera A + anula un espacio.
+	\item Use un formulario alternativo para la especificación de conversión. Produce un 0 inicial para la forma \% o y un 0x o 0X inicial para la forma \% x o\% X, respectivamente. Para todas las formas de punto flotante, \# garantiza que se imprima un carácter de punto decimal, incluso si no hay dígitos. Para los formularios \% g y \% G, evita que se eliminen los ceros finales.
+	\item Para formularios numéricos, rellenar el ancho del campo con ceros a la izquierda en lugar de espacios. Esta bandera se ignora si a - bandera está presente o si, para una forma entera, se especifica una precisión.
+\end{enumerate}
+
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_1.c}
+\caption{Programa \texttt{exercise3\_1.c}.}
+\label{lst:3.1}
+\end{listing}
+\end{solution}
+
 \question Escriba un programa que nos dé la siguiente salida:
 
 \begin{minted}{bash}
 **42**42**-42**
 **    6**  006**00006**  006
 \end{minted}
+
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_2.c}
+\caption{Programa \texttt{exercise3\_2.c}.}
+\label{lst:3.2}
+\end{listing}
+\end{solution}
 
 \question ¿Es factible la siguiente línea?
 
@@ -84,7 +111,25 @@ rv = printf(%d F es el punto de ebullición del agua.");
 
 si es factible, dé un ejemplo.
 
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_3.c}
+\caption{Programa \texttt{exercise3\_3.c}.}
+\label{lst:3.3}
+\end{listing}
+\end{solution}
+
 \question Escriba un programa donde se especifique el uso de \mintinline{bash}{*}:
+
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_4.c}
+\caption{Programa \texttt{exercise3\_4.c}.}
+\label{lst:3.4}
+\end{listing}
+\end{solution}
 
 \question Construya sentencia que hagan lo siguiente:
 
@@ -92,6 +137,16 @@ si es factible, dé un ejemplo.
 	\part En la función \mintinline{c}{printf()}
 	\part En la función \mintinline{c}{scanf()}
 \end{parts}
+
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_5.c}
+\caption{Programa \texttt{exercise3\_5.c}.}
+\label{lst:3.5}
+\end{listing}
+\end{solution}
+
 \question Suponga que un programa inicia con:
 
 \begin{minted}{c}
@@ -110,6 +165,15 @@ Esta copia de ``War y Peace'' se vende por \$12.99.
 Es decir, el 80\% de la lista.
 \end{flushleft}
 
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_6.c}
+\caption{Programa \texttt{exercise3\_6.c}.}
+\label{lst:3.6}
+\end{listing}
+\end{solution}
+
 \question Asuma que cada uno de los siguientes ejemplos es parte de un programa completo, ¿qué aparecerá en cada una?
 \begin{enumerate}[a.]
 \item \mintinline{c}{printf("El vendió el cuadro por $2.2f.\n", 2.345e2)};
@@ -118,15 +182,56 @@ Es decir, el 80\% de la lista.
 \item \mintinline{c}{printf("Es %2.2e los mismo que %2.2f?.\n",1201.0,1201.0);}
 \end{enumerate}
 
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_7.c}
+\caption{Programa \texttt{exercise3\_7.c}.}
+\label{lst:3.7}
+\end{listing}
+\end{solution}
+
 \question Escriba un programa que pregunte por su primer nombre, y luego su apellido, y luego los imprima primero el apellido y luego el nombre.
+
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_8.c}
+\caption{Programa \texttt{exercise3\_8.c}.}
+\label{lst:3.8}
+\end{listing}
+\end{solution}
+
 \question Escriba un programa que requiera su peso en pulgadas y su nombre y que imprima:
 \begin{minted}{bash}
 Dabney, eres 6.028 pies de alto.
 \end{minted}
 
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_9.c}
+\caption{Programa \texttt{exercise3\_9.c}.}
+\label{lst:3.9}
+\end{listing}
+\end{solution}
+
 \question Escriba un programa que requiera el primer nombre de usuario y luego el apellido del usuario. Imprima los nombres en una línea y el número de letras de cada nombre en la siguiente línea.
 
+\begin{solution}
+\begin{listing}[H]
+\footnotesize
+\inputminted{c}{exercise3_10.c}
+\caption{Programa \texttt{exercise3\_10.c}.}
+\label{lst:3.10}
+\end{listing}
+\end{solution}
+
 \question Repita el ejercicio anterior alineando cada nombre con cada número.
+
+\begin{solution}
+	
+\end{solution}
 
 \end{questions}
 

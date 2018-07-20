@@ -68,26 +68,33 @@ TEMA $\bm{2}$: DATOS Y C
 \begin{questions}
 
 \question ¿Qué tipo de datos usaría para cada uno de los siguientes tipos de datos?
+
 \begin{parts}
-\part La población del Río Frito.
-\part El peso promedio de una pintura de Rembrandt.
-\part La letra más común en este capítulo.
-\part El número de veces que esta letra ocurre.
+	\part La población del Río Frito.
+	
+	\part El peso promedio de una pintura de Rembrandt.
+	
+	\part La letra más común en este capítulo.
+	
+	\part El número de veces que esta letra ocurre.
 \end{parts}
 
 \begin{solution}
 Para los datos mencionados arriba emplearía los siguientes tipos de datos:
 \begin{enumerate}[(a)]
-	\item \mintinline{c}{int}, pues representa una cantidad de personas.
-	\item \mintinline{c}{float}, pues una balanza registrar sus valores con decimales.
-	\item \mintinline{c}{int}, es un valor que se puede contar, un número entero.
-	\item \mintinline{c}{int}, también es un valor numerable.
+	\item \mintinline{c}{int}, posiblemente \mintinline{c}{short} o \mintinline{c}{unsigned} o \mintinline{c}{unsigned short} pues representan un número entero.
+	
+	\item \mintinline{c}{float}, es poco probable que el costo sea un número entero exacto. (Podría usar el \mintinline{c}{double} pero realmente no necesita la precisión adicional).
+	
+	\item \mintinline{c}{char}.
+	
+	\item \mintinline{c}{int}, posiblemente \mintinline{c}{unsigned}.
 \end{enumerate}
 \end{solution}
 
 \question Virgila Ann Xenopod ha inventado un progrma cargado de errores. Corríjale sus errores:
 
-\begin{minted}{c}
+\begin{minted}[linenos]{c}
 #include <stdio.h>
 main{
 float g;h;
@@ -109,8 +116,8 @@ tax=rate*g;
 \question Identifique el tipo de datos (usados en declaraciones de sentencias) y el formato específico \mintinline{c}{printf()} para cada constante:
 
 \begin{table}[H]
-	\centering
-\begin{tabular}{|l|l|c|c|}
+\centering
+\begin{tabular}{|c|c|c|c|}
 	\hline
 	\multicolumn{2}{|c|}{\bfseries Constant} & \textbf{Type} & \textbf{Specifier}	\\
 	\hline
@@ -135,8 +142,8 @@ tax=rate*g;
 Se presenta a continuación la tabla completa.
 
 \begin{table}[H]
-	\centering
-	\begin{tabular}{|l|l|c|c|}
+\centering
+	\begin{tabular}{|c|c|c|c|}
 		\hline
 		\multicolumn{2}{|c|}{\bfseries Constant} & \textbf{Type} & \textbf{Specifier}	\\
 		\hline

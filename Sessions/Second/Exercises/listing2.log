@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.11)  12 JUL 2018 23:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.7.19)  19 JUL 2018 21:58
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1293,7 +1293,7 @@ Package pdftex.def Info: ../../../images/logocticblack.png  used on input line
 LaTeX Font Info:    Font shape `T1/LinuxBiolinumT-TLF/b/n' will be
 (Font)              scaled to size 12.0pt on input line 57.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 79.
+(Font)              scaled to size 10.0pt on input line 83.
 \openout5 = `listing2.pyg'.
 
  (./_minted-listing2/default-pyg-prefix.pygstyle)
@@ -1320,23 +1320,50 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/b/n' will be
 \openout5 = `listing2.pyg'.
 
 
+(./_minted-listing2/3F80C1ECAA9E8645448E737C86CDE3AC0A5CCDC3561A62355E018B10719
+B8377.pygtex)
+\openout5 = `listing2.pyg'.
+
+
+(./_minted-listing2/17642F323BEB2AE893849864865CA1C30A5CCDC3561A62355E018B10719
+B8377.pygtex)
+\openout5 = `listing2.pyg'.
+
+
+(./_minted-listing2/BD83D6CEBD88566FFE23056D686550530A5CCDC3561A62355E018B10719
+B8377.pygtex)
+\openout5 = `listing2.pyg'.
+
+
 (./_minted-listing2/EDCB5B280A371D1FE22BF3489485E1470A5CCDC3561A62355E018B10719
 B8377.pygtex)
 \openout5 = `listing2.pyg'.
 
 
-(./_minted-listing2/1C2766C0203CA8489F178B9955964C540A5CCDC3561A62355E018B10719
+(./_minted-listing2/40BC979FC51C312C66F13621C9C53E840A5CCDC3561A62355E018B10719
+B8377.pygtex)
+\openout5 = `listing2.pyg'.
+
+
+(./_minted-listing2/6EF9AA8C5BA3356EC387AD031B5F84B40A5CCDC3561A62355E018B10719
 B8377.pygtex)
 \openout5 = `listing2.pyg'.
 
 
 (./_minted-listing2/1C2766C0203CA8489F178B9955964C540A5CCDC3561A62355E018B10719
+B8377.pygtex)
+\openout5 = `listing2.pyg'.
+
+
+(./_minted-listing2/17642F323BEB2AE893849864865CA1C30A5CCDC3561A62355E018B10719
 B8377.pygtex)
 \openout3 = `listing2.pyg'.
 
 
 (./_minted-listing2/A1BA4BCE0C887BD3CDADB1316699483B0A5CCDC3561A62355E018B10719
 B8377.pygtex
+LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
+(Font)              scaled to size 5.0pt on input line 2.
 LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/it' in size <10> n
 ot available
 (Font)              Font shape `T1/LinuxLibertineMonoT-TLF/m/sl' tried instead 
@@ -1345,7 +1372,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/m/sl' will be
 (Font)              scaled to size 10.0pt on input line 2.
 )
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 8.0pt on input line 102.
+(Font)              scaled to size 8.0pt on input line 109.
 
 (./_minted-listing2/26F35A9A9E671774CB082A92602F153F5C75F7386C35060E85E7338EA9C
 E004B.pygtex
@@ -1365,7 +1392,7 @@ LaTeX Font Info:    Font shape `T1/LinuxLibertineMonoT-TLF/b/n' will be
 (Font)              scaled to size 8.0pt on input line 5.
 )
 Package hyperref Info: bookmark level for unknown listing defaults to 0 on inpu
-t line 104.
+t line 111.
 \openout5 = `listing2.pyg'.
 
 
@@ -1418,29 +1445,29 @@ B8377.pygtex)
 (./_minted-listing2/D923627509160B5CC5BA908C74D94F0D0A5CCDC3561A62355E018B10719
 B8377.pygtex)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 140.
  [1
 
 {/Users/User/Library/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
@@ -1559,29 +1586,29 @@ B8377.pygtex)
 (./_minted-listing2/84F556BF519A06A2C9674F7F7151D2A278FB4C96033B1A7CCA15BCB0ABC
 32BF9.pygtex)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 186.
+(babel)             in language  on input line 193.
  [2]
 (./_minted-listing2/8DC2A23BCA87C090217455026AF88FD49CCA44BDD35C65135115EC2B54F
 B8740.pygtex)
@@ -1590,91 +1617,89 @@ B8740.pygtex)
 (./_minted-listing2/0CDF7841893E7F883AE95614148FB52FDF07759C722FBA44F6F7AE4B1C8
 95CE6.pygtex)
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 7.0pt on input line 220.
-LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 5.0pt on input line 220.
+(Font)              scaled to size 7.0pt on input line 227.
 
 (./_minted-listing2/79E98EF59F81A9795B46B78679A653A8B9D1510C924A392D1AE27C6B148
 DB51D.pygtex)
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 229.
+(babel)             in language  on input line 236.
  [3]
 LaTeX Font Info:    Font shape `T1/LinuxLibertineT-TLF/m/n' will be
-(Font)              scaled to size 6.0pt on input line 247.
+(Font)              scaled to size 6.0pt on input line 254.
 <../../../images/Octocat.png, id=57, 803.0pt x 667.49374pt>
 File: ../../../images/Octocat.png Graphic file (type png)
 <use ../../../images/Octocat.png>
-Package pdftex.def Info: ../../../images/Octocat.png  used on input line 247.
+Package pdftex.def Info: ../../../images/Octocat.png  used on input line 254.
 (pdftex.def)             Requested size: 6.31017pt x 5.248pt.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 250.
+(babel)             in language  on input line 257.
  [4 <../../../images/Octocat.png>]
 This exam contains 10 questions with 4 parts, 0 subparts, and 0 subsubparts.
 This exam has a total of 0 points.
 This exam has a total of 0 bonus points.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 250.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 250.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 257.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 257.
 (./listing2.aux
 LaTeX Info: Redefining \. on input line 27.
 LaTeX Info: Redefining \% on input line 27.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 250.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 250.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 257.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 257.
 Package rerunfilecheck Info: File `listing2.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 runsystem(rm listing2.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 25401 strings out of 492646
- 481407 string characters out of 6129563
- 596024 words of memory out of 5000000
- 28828 multiletter control sequences out of 15000+600000
- 603735 words of font info for 100 fonts, out of 8000000 for 9000
+ 25421 strings out of 492646
+ 482941 string characters out of 6129563
+ 596389 words of memory out of 5000000
+ 28833 multiletter control sequences out of 15000+600000
+ 604146 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,18n,63p,844b,969s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/libertine/lbtn_7yry24.enc
@@ -1696,7 +1721,7 @@ amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfo
 nts/cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmsy7.pfb>
-Output written on listing2.pdf (4 pages, 469907 bytes).
+Output written on listing2.pdf (4 pages, 470931 bytes).
 PDF statistics:
  123 PDF objects out of 1000 (max. 8388607)
  99 compressed objects within 1 object stream
