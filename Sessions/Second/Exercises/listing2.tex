@@ -96,15 +96,35 @@ Para los datos mencionados arriba emplearía los siguientes tipos de datos:
 
 \begin{minted}[linenos]{c}
 #include <stdio.h>
-main{
+main(
 float g;h;
 float tax, rate;
 g=e21;
 tax=rate*g;
-}
+)
 \end{minted}
 
 \begin{solution}
+El programa de arriba tiene los siguientes errores:
+
+\begin{enumerate}[label={Línea \arabic*:},leftmargin=1.2cm]
+	\item Es correcto.
+	
+	\item Debe ir ``los argumentos'' de la función \mintinline{c}{main}, es decir, \mintinline{c}{main()}. Use \{, no (.
+
+	\item Debe ir una coma, no un punto y coma, entre g y h.
+	
+	\item Debe haber al menos un dígito antes de la \mintinline{c}{e}. Ya sea \mintinline{c}{1e21} o \mintinline{c}{1.0e21} está bien, aunque es bastante grande.
+	
+	\item Bien, al menos en términos de sintaxis.
+	
+	\item Use \}, no ).
+\end{enumerate}
+
+Líneas perdidas: Primero, nunca se le asigna un valor a \mintinline{c}{rate}. En segundo lugar, la variable \mintinline{c}{h} nunca se usa. Además, el programa nunca le informa los resultados de su cálculo. Ninguno de estos errores impedirá que el programa se ejecute (aunque es posible que se le advierta sobre la variable no utilizada), pero restan valor a su ya limitada utilidad. Además, debe haber una declaración de devolución al final.
+
+Aquí hay una posible versión correcta:
+
 \begin{listing}[H]
 	\footnotesize
 	\inputminted{c}{exercise2_2.c}

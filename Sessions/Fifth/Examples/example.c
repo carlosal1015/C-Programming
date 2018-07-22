@@ -25,11 +25,11 @@ main()
         printf("%i", array[i]);
     }
     */
-   struct Team
+   struct EQUIPO
    {
         int score1[32];
         int score2[32];
         int score3[32];
    };
-   Team TEAMS[32];
+   EQUIPO TEAMS[32];
 }
