@@ -4,9 +4,11 @@ int main(void)
 {
     float weight;               /* user weight */
     float value;                /* platinum equivalent */
+    
     printf("Are you worth your weight in platinum?\n");
     printf("Let's check it out.\n");
     printf("Please enter your weight in pounds: ");
+    
     /* get input from the user */
     scanf("%f", &weight);
     /* assume platinum is $1700 per ounce */

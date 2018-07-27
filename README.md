@@ -2,7 +2,7 @@ Lenguaje de Programación C - Nivel Básico
 ===
 
 <p align="center">
-  <img src="https://github.com/carlosal1015/C-Programming/blob/master/images/cprogramming.jpg" width="750">
+  <img src="./images/cprogramming.jpg" width="750">
 </p>
 
 
@@ -26,4 +26,4 @@ Lenguaje de Programación C - Nivel Básico
 | 4 | 22/06/2018 | [While loop](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/Fifth)|
 | 5 | 06/07/2018 | [Ejercicio FIFA World Cup 2018](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/First) |
 | 6 | 13/07/2018 | []() |
-| 7 | 20/07/2018 | |
+| 7 | 27/07/2018 | |

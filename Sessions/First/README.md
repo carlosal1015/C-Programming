@@ -262,18 +262,18 @@ Históricamente, el compilador de Unix C, invocado con el comando cc, definía e
 Para compilar el programa `inform.c`, escriba lo siguiente:
 
 ```bash
-cc inform.c
+carlosal1015@Oromion:~$ cc inform.c
 ```
 Después de un momento, el mensaje de Unix volverá, indicándote que la acción está completa. Es posible que reciba advertencias y mensajes de error si no pudo escribir el programa correctamente, pero supongamos que lo hizo todo bien. (Si el compilador se queja de la palabra `void`, su sistema aún no se ha actualizado a un compilador ANSI C. Pronto hablaremos más sobre estándares. Mientras tanto, simplemente elimine la palabra `void` del ejemplo.) Si usa el comando `ls` para liste sus archivos, encontrará que hay un nuevo archivo llamado `a.out`. Este es el archivo ejecutable que contiene la traducción (o compilación) del programa. Para ejecutarlo, simplemente escriba
 
 ```bash
-a.out
+carlosal1015@Oromion:~$ ./a.out
 ```
 
 y la sabiduría se derrama:
 
 ```bash
-A .c is used to end a C program filename.
+carlosal1015@Oromion:~$ A .c is used to end a C program filename.
 ```
 
 Si desea mantener el archivo ejecutable (`a.out`), debe cambiarle el nombre. De lo contrario, el archivo se reemplaza por uno nuevo la próxima vez que compile un programa.
@@ -287,7 +287,7 @@ El Proyecto GNU, que data de 1987, es una colaboración masiva que ha desarrolla
 Ambos aceptan una opción `-v` para obtener información de la versión, por lo que en los sistemas que usan el alias `cc` para el comando `gcc` o `clang`, la combinación
 
 ```bash
-cc -v
+carlosal1015@Oromion:~$ cc -v
 ```
 
 muestra qué compilador y qué versión está utilizando.
@@ -295,9 +295,9 @@ muestra qué compilador y qué versión está utilizando.
 Tanto los comandos `gcc` como `clang`, según la versión, pueden requerir opciones de tiempo de ejecución para invocar estándares C más recientes:
 
 ```bash
-gcc -std=c99 inform.c
-gcc -std=c1x inform.c
-gcc -std=c11 inform.c
+carlosal1015@Oromion:~$ gcc -std=c99 inform.c
+carlosal1015@Oromion:~$ gcc -std=c1x inform.c
+carlosal1015@Oromion:~$ gcc -std=c11 inform.c
 ```
 
 El primer ejemplo invoca el estándar C99, el segundo invoca el borrador del estándar C11 para las versiones GCC antes de la aceptación del estándar, y el tercero invoca el estándar C11 para las versiones GCC que siguieron a la aceptación. El compilador Clang usa las mismas banderas.
@@ -307,7 +307,7 @@ El primer ejemplo invoca el estándar C99, el segundo invoca el borrador del est
 Linux es un popular sistema operativo de código abierto parecido a Unix que se ejecuta en una variedad de plataformas, incluidas PC y Mac. La preparación de los programas C en Linux es muy similar a la de los sistemas Unix, excepto que se usaría el compilador C de dominio público de GCC provisto por GNU. El comando de compilación se ve así
 
 ```bash
-gcc inform.c
+carlosal1015@Oromion:~$ gcc inform.c
 ```
 
 Tenga en cuenta que la instalación de GCC puede ser opcional al instalar Linux, por lo que usted (o alguien) podría tener que instalar GCC si no se instaló anteriormente. Por lo general, la instalación hace que `cc` sea un alias para `gcc`, por lo que puede usar cc en la línea de comandos en lugar de gcc si lo desea.
@@ -323,7 +323,7 @@ Los archivos de código fuente deben ser archivos de texto plano, no archivos de
 Los compiladores de C para PC generalmente producen, pero no siempre, archivos de código de objeto intermedio que tienen una extensión .obj. A diferencia de los compiladores de Unix, estos compiladores generalmente no eliminan estos archivos cuando terminan. Algunos compiladores producen archivos en lenguaje ensamblador con extensiones `.asm` o usan algún formato especial propio. Algunos compiladores ejecutan el enlazador automáticamente después de compilar; otros pueden requerir que ejecute el enlazador manualmente. Vinculación de resultados en el archivo ejecutable, que agrega la extensión `.EXE` al nombre base del código fuente original. Por ejemplo, compilar y vincular un archivo de código fuente llamado `concrete.c` produce un archivo llamado `concrete.exe`. Puede ejecutar el programa escribiendo el nombre base en la línea de comando:
 
 ```bash
-C> concret
+carlosal1015@Oromion:~$ C> concret
 ```
 
 #### Entornos de desarrollo integrado (Windows)
@@ -338,4 +338,188 @@ Un problema que puede encontrar es que la ventana que muestra la ejecución del 
 
 ```c
 getchar();
+```
+
+Esta línea lee una pulsación de tecla, por lo que el programa se detendrá hasta que presione la tecla Enter. En ocasiones, dependiendo de cómo funcione el programa, puede que ya haya una pulsación de tecla en espera. En ese caso, tendrá que usar `getchar()` dos veces:
+
+```c
+getchar();
+getchar();
+```
+
+Por ejemplo, si lo último que hizo el programa fue pedirte que ingreses tu peso, habrías tipeado tu peso y luego presionado la tecla Enter para ingresar los datos. El programa leería el peso, el primer `getchar()` leería la tecla Enter, y el segundo `getchar()` haría que el programa pause hasta que presione Enter nuevamente. Si esto no tiene mucho sentido para usted ahora, lo hará después de que aprenda más acerca de la entrada C. Y te recordaremos más tarde acerca de este enfoque.
+
+Aunque los diversos IDE tienen muchos principios generales en común, los detalles varían de un producto a otro y, dentro de una línea de producto, de una versión a otra. Tendrás que hacer un algunos pocos experimentos para aprender cómo funciona tu compilador. Incluso podría tener que leer el manual o probar un tutorial en línea.
+
+> Microsoft Visual Studio y el estándar C
+
+> Microsoft Visual Studio y el software gratuito Microsoft Visual Studio Express tienen la mayor presencia en el desarrollo de software de Windows, por lo que su relación con los estándares C es de cierta importancia. En resumen, Microsoft ha alentado a los programadores a cambiar de C a C++ o C #. Visual Studio admite C89/90, pero su soporte para estándares posteriores, hasta la fecha, consiste en admitir aquellas características nuevas que también se encuentran en C++, como el tipo `long long`. Además, a partir de la edición de 2012, Visual Studio no ofrece C como una de las opciones para el tipo de proyecto. Sin embargo, aún puede usar Visual Studio con la gran mayoría de los programas de este libro. Una opción es simplemente elegir la opción C++, luego Win32 Console, luego Proyecto vacío en la configuración de la aplicación. Casi todos los C son compatibles con C++, por lo que la mayoría de los programas C de este libro también funcionan como programas C++. O bien, después de elegir la opción C ++, puede usar la extensión .c en lugar de la extensión .cpp predeterminada para el archivo fuente, y el compilador utilizará las reglas C en lugar de las reglas de C++.
+
+#### La opción de Windows/Linux
+
+Se pueden instalar muchas distribuciones de Linux desde Windows para configurar un sistema de arranque dual. Parte de su almacenamiento se reservará para un sistema Linux, y luego puede iniciarse en Windows o Linux. No puede ejecutar un programa de Linux desde Windows o viceversa, y no puede acceder a los archivos de Linux desde Windows, pero puede acceder a los documentos de Windows desde Linux.
+
+#### C en el Macintosh
+
+Actualmente, Apple ofrece su sistema de desarrollo [Xcode](https://developer.apple.com/xcode/) como una descarga gratuita. (En el pasado, algunas veces era gratis, a veces disponible por una carga modesta). Le permite elegir entre varios lenguajes de programación, incluido C.
+
+Xcode, con su capacidad para manejar varios lenguajes de programación, para apuntar a múltiples plataformas. y desarrollar proyectos a gran escala puede parecer intimidante. Pero necesita aprender lo suficiente para producir programas C simples. Con Xcode 9.4, use el menú Archivo para seleccionar Nuevo, Proyecto, Herramienta de línea de comandos de la aplicación OS X, luego ingrese el nombre de un producto y seleccione C para el Tipo. Xcode usa el compilador Clang o GCC C para el código C. Solía ​​usar GCC por defecto, y ahora usa Clang por defecto. Puede usar la configuración de Xcode para elegir qué compilador utiliza y también para qué estándar C es compatible. (Debido a cuestiones de licencia, la versión de Clang disponible con Xcode es más reciente que la versión de GCC).
+
+Mac OS X está basado en Unix y la utilidad Terminal abre una ventana que le permite ejecutar programas en un entorno de línea de comandos de Unix. Apple no proporciona un compilador de línea de comandos como parte de su paquete estándar, pero si descarga Xcode, también puede descargar herramientas de línea de comando opcionales que le permiten usar los comandos clang y gcc para compilar en modo línea de comando.
+
+#### Cómo está organizado este libro
+
+Hay muchas formas de organizar la información. Uno de los enfoques más directos es presentar todo sobre el tema A, todo sobre el tema B, y así sucesivamente. Esto es particularmente útil como referencia para que pueda encontrar toda la información sobre un tema determinado en un solo lugar. Pero generalmente no es la mejor secuencia para aprender un tema. Por ejemplo, si comenzó a aprender inglés aprendiendo primero todos los sustantivos, su capacidad para expresar ideas sería muy limitada. Claro, podrías señalar objetos y gritar sus nombres, pero estarías mucho mejor equipado para expresarte si aprendieras solo unos pocos sustantivos, verbos, adjetivos, etc., junto con algunas reglas sobre cómo esas partes se relacionan con unos y otros.
+
+Para proporcionarle una información más equilibrada, este libro utiliza un enfoque en espiral para introducir varios temas en los capítulos anteriores y volver más adelante para analizarlos de manera más completa. Por ejemplo, entender las funciones es esencial para comprender C. En consecuencia, varios de los primeros capítulos incluyen un análisis de las funciones para que cuando llegue a la discusión completa en el Capítulo 9, "Funciones", ya haya logrado cierta facilidad sobre usando funciones. De manera similar, los primeros capítulos hacen una vista previa de las cadenas y bucles para que pueda comenzar a utilizar estas útiles herramientas en sus programas antes de conocerlos en detalle.
+
+#### Las convenciones usadas en este libro
+
+Estamos casi listos para comenzar a estudiar el lenguaje C en sí mismo. Esta sección cubre algunas de las convenciones que usamos para presentar el material.
+
+#### Tipo de letra
+
+Para el texto que representa los programas y la entrada y salida de la computadora, utilizamos una fuente de tipo que se parece a lo que puede ver en una pantalla o en un resultado impreso. Ya lo hemos usado algunas veces. En caso de que se le pase por alto, la fuente es similar a la siguiente:
+
+```c
+#include <stdio.h>
+int main (void)
+{
+    printf ("El  concreto contiene grava y cemento.\n");
+
+    return 0;
+}
+```
+
+El mismo tipo de monoespaciado es para los términos relacionados con el código utilizados en el texto, como `main()` y para los nombres de archivo, como `stdio.h`. El libro utiliza monoespaciado cursiva para términos de marcador de posición para los que se espera que sustituya términos específicos, como en el siguiente modelo de declaración:
+
+```c
+type_name variable_name;
+```
+
+Aquí, por ejemplo, puede reemplazar `type_name` con `int` y `variable_name` con `zebra_count`.
+
+#### Salida del programa
+
+La salida de la computadora se imprime en el mismo formato, con la excepción de que la entrada del usuario se muestra en negrita. Por ejemplo, el siguiente es un resultado del programa de un ejemplo en el Capítulo 14, "Estructuras y otras formas de datos":
+
+```bash
+Por favor ingrese el título del libro.
+Presione [enter] al comienzo de una línea para detenerse.
+
+Mi vida como un Budgie
+Ahora ingrese el autor.
+
+Mack Zackles
+```
+
+Las líneas impresas en la fuente normal de la computadora son salidas del programa, y la línea en negrita es la entrada del usuario.
+
+Hay muchas maneras en que usted y una computadora pueden comunicarse entre sí. Sin embargo, supondremos que escribe comandos utilizando un teclado y que lee la respuesta en una pantalla.
+
+#### Pulsaciones de teclas especiales
+
+Por lo general, envía una línea de instrucciones presionando una tecla llamada Enter, c/r, Return o alguna variación de estas. Nos referimos a esta clave en el texto como la tecla *Intro*. Normalmente, el libro da por descontado que usted presiona la tecla Enter al final de cada línea de entrada. Sin embargo, para aclarar puntos particulares, algunos ejemplos muestran explícitamente la tecla Enter, usando el símbolo `[enter]` para representarlo. Los corchetes significan que presionas una sola tecla en lugar de escribir la palabra enter.
+
+También nos referimos a los caracteres de control, como `Ctrl+D`. Esta notación significa presionar la tecla D mientras presiona la tecla denominada `Ctrl` (o quizás Control).
+
+#### Sistemas utilizados en la preparación de este libro
+
+Algunos aspectos de C, como la cantidad de espacio utilizado para almacenar un número, dependen del sistema. Cuando damos ejemplos y nos referimos a "nuestro sistema", generalmente hablamos de un MacBook que se ejecuta bajo OS X 10.13.5 y que usa el sistema de desarrollo Xcode 9.4 con el compilador Clang 5.0. La mayoría de los programas también se han compilado utilizando Microsoft Visual Studio Express 2012 y Pelles C 7.0 en un sistema Windows 7 y GCC 7.0 en un sistema Ubuntu 18.04 Linux.
+
+Puede descargar el código de los ejemplos de este libro si registra el libro en [www.informit.com/registrarse](www.informit.com/registrarse).
+
+#### Su sistema--lo que necesita
+
+Necesita tener un compilador de C o acceder a uno. C se ejecuta en una enorme variedad de sistemas informáticos, por lo que tiene muchas opciones. Asegúrese de utilizar un compilador de C diseñado para su sistema en particular. Algunos de los ejemplos en este libro requieren soporte para los estándares C99 o C11, pero la mayoría de los ejemplos funcionarán con un compilador C90. Si el compilador que usa es anterior de ANSI/ISO, tendrá que hacer ajustes, probablemente con la frecuencia suficiente como para alentarlo a buscar algo más nuevo. La mayoría de los proveedores de compiladores ofrecen precios especiales para estudiantes y educadores, por lo que si usted pertenece a esa categoría, consulte los sitios web de los proveedores.
+
+#### Elementos especiales
+
+El libro incluye varios elementos especiales que resaltan puntos particulares: barras laterales, consejos, precauciones y notas. Lo siguiente ilustra sus apariencias y usos:
+
+> **Barra lateral**
+> 
+> Una barra lateral proporciona una discusión más profunda o antecedentes adicionales para ayudar a iluminar un tema.
+
+> **Consejos**
+> 
+> Las sugerencias presentan guías breves y útiles para situaciones particulares de programación.
+
+> **Advertencia**
+> 
+> Una advertencia lo alerta sobre posibles trampas.
+
+> **Nota**
+> 
+> Las notas proporcionan una categoría general para los comentarios que no entran en una de las otras categorías.
+
+#### Resumen
+
+C es un lenguaje de programación poderoso y conciso. Es popular porque ofrece útiles herramientas de programación, buen control del hardware y porque los programas C son más fáciles que la mayoría de transportar de un sistema a otro.
+
+C es un lenguaje compilado. Los compiladores C y los enlazadores son programas que convierten el código fuente del lenguaje C en código ejecutable.
+
+Programar en C puede ser agotador, difícil y frustrante, pero también puede ser intrigante, excitante y satisfactorio. Esperamos que lo encuentre tan agradable y fascinante como nosotros.
+
+#### Preguntas de revisión
+
+Encontrará las respuestas a las preguntas de revisión en el Apéndice A, "Respuestas a las preguntas de revisión".
+
+1. ¿Qué significa la portabilidad en el contexto de la programación?
+
+Un programa perfectamente portátil es aquel cuyo código fuente puede, sin modificaciones, ser compilado a un programa exitoso en una variedad de diferentes sistemas informáticos.
+
+2. Explique la diferencia entre un archivo de código fuente, un archivo de código objeto y un archivo ejecutable.
+
+Un archivo de código fuente contiene código tal como está escrito en cualquier idioma que el programador esté usando. Un archivo de código de objeto contiene código de lenguaje de máquina; no necesita ser el código para un programa completo. Un archivo ejecutable contiene el código completo, en lenguaje de máquina, que constituye un programa ejecutable.
+
+3. ¿Cuáles son los siete pasos principales en la programación?
+
+a. Definiendo los objetivos del programa.
+
+b. Diseñando el programa.
+
+c. Codificando el programa.
+
+d. Compilando el programa.
+
+e. Ejecutando el programa.
+
+f. Prueba y depuración del programa.
+
+g. Manteniendo y modificando el programa.
+
+4. ¿Qué hace un compilador?
+
+Un compilador traduce el código fuente (por ejemplo, código escrito en C) al código de lenguaje de máquina equivalente, también denominado *código de objeto*.
+
+5. ¿Qué hace un enlazador?
+
+El enlazador combina el código fuente traducido con el código de la biblioteca y el código de inicio para producir un programa ejecutable.
+
+#### Ejercicio de programación
+
+No esperamos que escriba código C todavía, por lo que este ejercicio se concentra en las primeras etapas del proceso de programación.
+
+1. Usted acaba de ser empleado por MacroMúsculo, Inc. (Software para Cuerpos Duros). La compañía está ingresando al mercado europeo y quiere un programa que convierta pulgadas a centímetros (1 pulgada = 2.54 cm). La compañía quiere que el programa se configure de modo que indique al usuario que ingrese un valor en pulgadas. Su tarea es definir los objetivos del programa y diseñar el programa (pasos 1 y 2 del proceso de programación).
+
+**Solución:**
+
+Según los siete pasos del proceso de programación, los pasos uno y dos son los siguientes:
+
+1. Convertir los datos de entradas en pulgadas a centímetros.
+2. El diseño es el que se muestra abajo:
+
+```
+subproceso pulgadas2centimetros
+inicio
+    flotante pulgadas, centimentros, conversor = 2.54
+
+    imprimir(Ingrese un valor en pulgadas)
+    leer(pulgadas)
+    
+    centimetros <- pulgadas * conversor
+
+    imprimir(El valor es @, centimetros)
+fin
 ```
