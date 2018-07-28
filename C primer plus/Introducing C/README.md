@@ -32,7 +32,7 @@ int main(void)					/*	a simple program		*/
 }
 ```
 
-Si crees que este programa imprimirá algo en tu pantalla, ¡tienes razón! Exactamente lo que se imprimirá podría no ser aparente, por lo tanto, ejecute el programa y vea los resultados. Primero, use su editor favorito (o el editor favorito de su compilador) para crear un archivo que contenga el texto del Listado 2.1. Déle un nombre al archivo que termine en `.c` y que satisfaga los requisitos de nombre de su sistema local. Puede usar [`first.c`](../listing/first.c), por ejemplo. Ahora compile y ejecute el programa. (Consulte el Capítulo 1, "Preparándose", para obtener algunas pautas generales para este proceso). Si todo salió bien, la salida debería ser similar a la siguiente:
+Si crees que este programa imprimirá algo en tu pantalla, ¡tienes razón! Exactamente lo que se imprimirá podría no ser aparente, por lo tanto, ejecute el programa y vea los resultados. Primero, use su editor favorito (o el editor favorito de su compilador) para crear un archivo que contenga el texto del Listado 2.1. Déle un nombre al archivo que termine en `.c` y que satisfaga los requisitos de nombre de su sistema local. Puede usar [`first.c`](https://github.com/carlosal1015/C-Programming/blob/master/C%20primer%20plus/Introducing%20C/listing/first.c), por ejemplo. Ahora compile y ejecute el programa. (Consulte el Capítulo 1, "Preparándose", para obtener algunas pautas generales para este proceso). Si todo salió bien, la salida debería ser similar a la siguiente:
 
 ```bash
 I am a single computer.
