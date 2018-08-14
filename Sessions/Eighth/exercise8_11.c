@@ -42,3 +42,4 @@ void display(char c, int first, int last)
 	putchar('\n');		/* end line and start a new one*/
 }
 //siempre se parte de un programa ya hecho, se puede retocar las tareas.
+//rain.c
