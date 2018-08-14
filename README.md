@@ -23,7 +23,7 @@ Lenguaje de Programación C - Nivel Básico
 | 1 | 01/06/2018 | [Historia de C y las 7 partes de un programa](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/First). |
 | 2 | 08/06/2018 | [La función printf y datos en C](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/Second)|
 | 3 | 15/06/2018 | [Condicionales y cadenas](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/Third)|
-| 4 | 22/06/2018 | [While loop](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/Fifth)|
-| 5 | 06/07/2018 | [Ejercicio FIFA World Cup 2018](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/First) |
-| 6 | 13/07/2018 | []() |
-| 7 | 03/08/2018 | |
+| 4 | 22/06/2018 | [While loop](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/Fourth)|
+| 5 | 06/07/2018 | [Ejercicio FIFA World Cup 2018](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/Fifth) |
+| 6 | 13/07/2018 | [](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/Sixth) |
+| 7 | 13/08/2018 | [](https://github.com/carlosal1015/C-Programming/tree/master/Sessions/Seventh)| |
