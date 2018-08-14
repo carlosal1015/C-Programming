@@ -1,9 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}stdio.h\PYGZgt{}}
-\PYG{n}{main}\PYG{p}{()}
-\PYG{p}{\PYGZob{}}
-    \PYG{k+kt}{char} \PYG{n}{name}\PYG{p}{[}\PYG{l+m+mi}{50}\PYG{p}{]} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}Oromion Aznarán\PYGZdq{}}\PYG{p}{;}
-    \PYG{k+kt}{char} \PYG{n}{address}\PYG{p}{[}\PYG{l+m+mi}{100}\PYG{p}{]} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}Av. Túpac Amaru, Puerta Nº 5 Pabellón R4, Lima Perú\PYGZdq{}}\PYG{p}{;}
-    \PYG{n}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Mi nombre es \PYGZpc{}s.}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s}{Mi dirección es \PYGZpc{}s\PYGZdq{}}\PYG{p}{,} \PYG{n}{name}\PYG{p}{,} \PYG{n}{address}\PYG{p}{);}
-\PYG{p}{\PYGZcb{}}
-\end{Verbatim}

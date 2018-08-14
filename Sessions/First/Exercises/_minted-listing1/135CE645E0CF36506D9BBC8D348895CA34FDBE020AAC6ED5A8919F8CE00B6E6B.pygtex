@@ -1,8 +1,0 @@
-\begin{Verbatim}[commandchars=\\\{\}]
-\PYG{c+cp}{\PYGZsh{}include} \PYG{c+cpf}{\PYGZlt{}stdio.h\PYGZgt{}}
-\PYG{n}{main}\PYG{p}{()}
-\PYG{p}{\PYGZob{}}
-    \PYG{k+kt}{int} \PYG{n}{years} \PYG{o}{=} \PYG{l+m+mi}{22}\PYG{p}{,} \PYG{n}{days} \PYG{o}{=} \PYG{n}{years} \PYG{o}{*} \PYG{l+m+mi}{365}\PYG{p}{;}
-    \PYG{n}{printf}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}Mi edad en días es \PYGZpc{}d\PYGZdq{}}\PYG{p}{,} \PYG{n}{days}\PYG{p}{);}
-\PYG{p}{\PYGZcb{}}
-\end{Verbatim}
