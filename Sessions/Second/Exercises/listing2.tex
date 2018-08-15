@@ -167,19 +167,19 @@ Se presenta a continuación la tabla completa.
 		\hline
 		\multicolumn{2}{|c|}{\bfseries Constant} & \textbf{Type} & \textbf{Specifier}	\\
 		\hline
-		A	&	\mintinline{c}{012} 	& \mintinline{c}{int}	& \mintinline{c}{%d}	\\
+		A	&	\mintinline{c}{012} 	& \mintinline{c}{unsigned int}	& \mintinline{c}{%#o}	\\
 		\hline
-		B 	&	\mintinline{c}{2.9e05L}& \mintinline{c}{long}&	\mintinline{c}{%ld}\\
+		B 	&	\mintinline{c}{2.9e05L}& \mintinline{c}{long double}&	\mintinline{c}{%Le}\\
 		\hline
-		C	&	\mintinline{c}{'s'}	& \mintinline{c}{char}	&	\mintinline{c}{%c}\\
+		C	&	\mintinline{c}{'s'}	& \mintinline{c}{char} (realmente \mintinline{c}{int})	&	\mintinline{c}{%c}\\
 		\hline
-		D	&	\mintinline{c}{10000} 	& \mintinline{c}{int}	&	\mintinline{c}{%d}\\
+		D	&	\mintinline{c}{10000} 	& \mintinline{c}{long}	&	\mintinline{c}{%ld}\\
 		\hline
-		E	&	\mintinline{c}{'\n'} 	& \mintinline{c}{char}	&	\mintinline{c}{%s}\\
+		E	&	\mintinline{c}{'\n'} 	& \mintinline{c}{char} (realmente \mintinline{c}{int})	&	\mintinline{c}{%c}\\
 		\hline
 		F	&	\mintinline{c}{20.0f}	&	\mintinline{c}{float}&	\mintinline{c}{%f}\\
 		\hline
-		G	&	\mintinline{c}{0x44}	&	\mintinline{c}{unsigned int}&	\mintinline{c}{%#X}\\
+		G	&	\mintinline{c}{0x44}	&	\mintinline{c}{unsigned int}&	\mintinline{c}{%x}\\
 		\hline
 		\end{tabular}
 \end{table}
@@ -211,10 +211,10 @@ printf("Esto implica que hay %f cows",cows)
 
 \begin{solution}
 \begin{listing}[H]
-\footnotesize
-\inputminted{c}{exercise2_5.c}
-\caption{Programa \texttt{exercise2\_5.c}.}
-\label{lst:2.5}
+	\footnotesize
+	\inputminted{c}{exercise2_5.c}
+	\caption{Programa \texttt{exercise2\_5.c}.}
+	\label{lst:2.5}
 \end{listing}
 \end{solution}
 
@@ -222,10 +222,10 @@ printf("Esto implica que hay %f cows",cows)
 
 \begin{solution}
 \begin{listing}[H]
-\footnotesize
-\inputminted{c}{exercise2_6.c}
-\caption{Programa \texttt{exercise2\_6.c}.}
-\label{lst:2.6}
+	\footnotesize
+	\inputminted{c}{exercise2_6.c}
+	\caption{Programa \texttt{exercise2\_6.c}.}
+	\label{lst:2.6}
 \end{listing}
 \end{solution}
 
@@ -235,10 +235,10 @@ Asustada por el sonido, Sally gritó: \textbf{``Por la gran calabaza, ¡Qué fue
 
 \begin{solution}
 \begin{listing}[H]
-\footnotesize
-\inputminted{c}{exercise2_7.c}
-\caption{Programa \texttt{exercise2\_7.c}.}
-\label{lst:2.7}
+	\footnotesize
+	\inputminted{c}{exercise2_7.c}
+	\caption{Programa \texttt{exercise2\_7.c}.}
+	\label{lst:2.7}
 \end{listing}	
 \end{solution}
 
@@ -248,23 +248,33 @@ La entrada es $21.290000$ o $2.129000\text{e}+001$.
 
 \begin{solution}
 \begin{listing}[H]
-\footnotesize
-\inputminted{c}{exercise2_8.c}
-\caption{Programa \texttt{exercise2\_8.c}.}
-\label{lst:2.8}
-\end{listing}	
+	\footnotesize
+	\inputminted{c}{exercise2_8.c}
+	\caption{Programa \texttt{exercise2\_8.c}.}
+	\label{lst:2.8}
+\end{listing}
 \end{solution}
 
 \question Aproximadamente hay $3,156\times10^{7}$ segundos en un año. Escriba un programa que solicite su edad en años y visualice su equivalente en segundos.
 
 \begin{solution}
-	
+\begin{listing}[H]
+	\footnotesize
+	\inputminted{c}{exercise2_9.c}
+	\caption{Programa \texttt{exercise2\_9.c}.}
+	\label{lst:2.9}
+\end{listing}
 \end{solution}
 
 \question Las masas de una molécula simple tiene unos $3,0\times10^{-23}$ gramos. Un cuarto de agua es unos $950$ gramos. Escriba un programa que solicite la cantidad de agua, en cuartos, y visualice el número de moléculas de agua en esa cantidad.
 
 \begin{solution}
-	
+\begin{listing}[H]
+	\footnotesize
+	\inputminted{c}{exercise2_10.c}
+	\caption{Programa \texttt{exercise2\_10.c}.}
+	\label{lst:2.10}
+\end{listing}
 \end{solution}
 
 \end{questions}

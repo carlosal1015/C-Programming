@@ -1,5 +1,11 @@
 #include <stdio.h>
-main()
+int main (void)
 {
-    printf("La entrada es %2.6f o %2.6e.",21.290000,21.290000);
+    float number;
+    printf("Ingrese un número punto flotante:\n");
+    scanf("%f", &number);
+
+    printf("La entrada es %f o %e.\n",number, number);
+
+    return 0;
 }

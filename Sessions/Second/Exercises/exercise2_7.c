@@ -1,5 +1,8 @@
 #include <stdio.h>
-main()
+int main(void)
 {
-    printf("Asustada por el sonido, Sally gritó:\nPor la gran calabaza, ¡Qué fue eso!");
+    printf("Asustada por el sonido, Sally gritó:\n"
+    "Por la gran calabaza, ¡Qué fue eso!\n");
+
+    return 0;
 }

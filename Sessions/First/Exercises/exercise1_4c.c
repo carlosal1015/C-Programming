@@ -1,5 +1,7 @@
 #include <stdio.h>
-main()
+int main(void)
 {
     printf("Begone\no creature of lard");
+
+    return 0;
 }

@@ -1,11 +1,24 @@
 #include <stdio.h>
-main(){
-    short i = 32767;
-    short j = 65533;
-    //printf("%d %d %d\n", i, i+1, i+2);
-    //printf("%d %d %d\n", 2i, 2i+1, 2i+2);
-    printf("%d %d %d %d %d\n", i-2, i-1, i, i+1, i+2);
-    printf("%d %d %d %d %d\n", 2i-2, 2i-1, 2i, 2i+1, 2i+2);
+#include <limits.h>
+#include <float.h>
 
-    printf("%d %d %d %d %d\n", j-2, j-1, j, j+1, j+2);
+int main(void)
+{
+	int int_desborde;
+	int MAX_INTEGER = INT_MAX;
+	float flt_desborde, flt_subdesborde;
+	float MIN_FLOAT = FLT_MIN;
+	float MAX_FLOAT = FLT_MAX;
+	
+	// desborde/subdesborde creado artificialmente
+	int_desborde = INT_MAX + 1;
+	flt_desborde = FLT_MAX * 2.;
+	flt_subdesborde = FLT_MIN / 2.;
+	
+	// imprimir resultados
+	printf("Max integer: %d \tMax integer + 1: %d\n", INT_MAX, int_desborde);
+	printf("Max float: %f \tMax float * 2: %f\n", FLT_MAX, flt_desborde);
+	printf("Min float: %f \tMin float / 2: %f\n", FLT_MIN, flt_subdesborde);
+
+	return 0;
 }

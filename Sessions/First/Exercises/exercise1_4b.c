@@ -1,5 +1,7 @@
 #include <stdio.h>
-main()
+int main(void)
 {
     printf("Have you any woo?\n");
+
+    return 0;
 }

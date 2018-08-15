@@ -1,5 +1,7 @@
 #include <stdio.h>
-main()
+int main(void)
 {
     printf("Baa Baa Black Sheep");
+
+    return 0;
 }

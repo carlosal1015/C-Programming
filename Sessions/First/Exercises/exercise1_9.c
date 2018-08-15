@@ -1,8 +1,10 @@
 #include <stdio.h>
-main()
+int main(void)
 {
     printf("For he's a jolly good fellow!\n"
     "For he's a jolly good fellow!\n"
     "For he's a jolly good fellow!\n"
     "Which nobody can deny!\n");
+
+    return 0;
 }
