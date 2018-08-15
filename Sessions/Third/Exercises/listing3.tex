@@ -185,13 +185,18 @@ Es decir, el 80% de la lista.
 
 \begin{enumerate}[a.]
 \item \mintinline{c}{printf("El vendió el cuadro por $%2.2f.\n", 2.345e2);}
-\item \mintinline{c}{printf("%c%c%c\n",'H','105','\41');}
+\item \mintinline{c}{printf("%c%c%c\n",'H',105,'\41');}
+
 \item \mintinline{c}{#define Q "Su Hamlet era divertido sin ser vulgar."}
+
+\mintinline{c}{printf("%s\ntiene %d carácteres.\n", Q, strlen(Q));}
+
 \item \mintinline{c}{printf("Es %2.2e los mismo que %2.2f?.\n",1201.0,1201.0);}
 \end{enumerate}
 
 \begin{solution}
-Si, obtendremos:
+Si creamos el listing~\ref{lst:3.6} con los ítemes de arriba y lo incluimos de manera adecuada aparecerá los siguientes mensajes:
+
 \begin{listing}[H]
 	\footnotesize
 	\inputminted{c}{exercise3_6.c}
@@ -199,38 +204,11 @@ Si, obtendremos:
 	\label{lst:3.6}
 \end{listing}
 
-
-\begin{multicols}{2}
-\begin{enumerate}[(a)]
-
-\item Imprimirá:
-
-\begin{minted}{bash}
-pc@CTIC:~$ Baa Baa Black Sheep
-\end{minted}
-
-\item Imprimirá:
-
-\begin{minted}{bash}
-pc@CTIC:~$ Have you any woo?
-pc@CTIC:~$ 
-\end{minted}
-
-\item Imprimirá:
-
-\begin{minted}{bash}
-pc@CTIC:~$ Begone
-pc@CTIC:~$ o creature of lard
-\end{minted}
-
-\item Imprimirá:
-
-\begin{minted}{bash}
-pc@CTIC:~$ 2+2=4
-\end{minted}
+\begin{enumerate}[a.]
+\item \mintinline{bash}{El vendió el cuadro por $234.50.}
 
 \end{enumerate}
-\end{multicols}
+
 \end{solution}
 
 \question Escriba un programa que pregunte por su primer nombre, y luego su apellido, y luego los imprima primero el apellido y luego el nombre.
