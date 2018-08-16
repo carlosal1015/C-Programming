@@ -137,18 +137,14 @@ return;
 \end{minted}
 
 \begin{solution}
-\begin{enumerate}[label={Línea \arabic*:},leftmargin=1.2cm]
+\begin{enumerate}[label={Línea \arabic*:},leftmargin=1.2cm]\setcounter{enumi}{-1}
 	\item Debe ir la cabecera \mintinline{c}{#include <stdio.h>}.\setcounter{enumi}{2}
-
-	\item Debe acabar en punto y coma, no en coma.
-	
-	\item Debe ir una coma, no un punto y coma, entre g y h.
-	
-	\item Debe haber al menos un dígito antes de la \mintinline{c}{e}. Ya sea \mintinline{c}{1e21} o \mintinline{c}{1.0e21} está bien, aunque es bastante grande.
-	
-	\item Bien, al menos en términos de sintaxis.
-	
-	\item Use \}, no ).
+	\item Debe acabar en punto y coma, no en coma.\setcounter{enumi}{5}
+	\item La instrucción \mintinline{c}{while} establece un ciclo infinito porque el valor de \mintinline{c}{i} permanece \mintinline{c}{1}	y siempre es menos de \mintinline{c}{30}. Presumiblemente, se quiso escribir \mintinline{c}{while (i++ <30)}.
+	\item[Línea 6--8] La sangría implica que queríamos las líneas 7 y 8 para formar un bloque, pero la falta de llaves significa que el ciclo while incluye solo la línea 7. Deben agregarse llaves.\setcounter{enumi}{6}
+	\item Como \mintinline{c}{1} e \mintinline{c}{i} son ambos enteros, el resultado de la división será \mintinline{c}{1} cuando \mintinline{c}{i} es \mintinline{c}{1} y \mintinline{c}{0} para todos los valores más grandes. La sentencia \mintinline{c}{n = 1.0 / i;} causaría que \mintinline{c}{n} se convierta en flotante.
+	\item Omitimos un carácter de nueva línea \mintinline{c}{\n} en la declaración de control. Esto causa los números sean impresos en una sola línea.\setcounter{enumi}{9}
+	\item Debería estar \mintinline{c}{return 0;}.
 \end{enumerate}
 
 Aquí hay una posible versión correcta:
@@ -185,16 +181,21 @@ printf("See you!\n");
 \end{minted}
 
 \begin{solution}
-	
+
+El principal problema radica en la relación entre la declaración de prueba (¿es \mintinline{c}{sec} mayor que $0$?) Y la instrucción \mintinline{c}{scanf()} que obtiene el valor de \mintinline{c}{sec}. En particular, la primera vez que se realiza la prueba, el programa no ha tenido la oportunidad de obtener un valor por segundo, y la comparación se realizará con algún valor basura que se encuentre en esa ubicación de memoria; puede o no ser mayor que $0$. Una solución, aunque poco elegante, es inicializar \mintinline{c}{sec} a, por ejemplo, \mintinline{c}{1} para que la prueba se pase la primera vez. Esto descubre un segundo problema. Cuando finalmente escribes \mintinline{c}{0} para detener el programa, \mintinline{c}{sec} no
+verifique hasta que termine el ciclo y se impriman los resultados de $0$ segundos. Lo que realmente quiere es tener una instrucción \mintinline{c}{scanf()} justo antes de realizar la prueba. Puede lograr eso alterando la parte central del programa para leer de esta manera:
+
 \begin{listing}[H]
 	\footnotesize
 	\inputminted{c}{exercise4_3.c}
 	\caption{Programa \texttt{exercise4\_3.c}.}
 	\label{lst:4.3}
 \end{listing}
+
+La primera vez, se utiliza el \mintinline{c}{scanf()} fuera del bucle. A partir de entonces, se usa el \mintinline{c}{scanf()} al final del ciclo (y, por tanto, justo antes de que el ciclo comience de nuevo).
 \end{solution}
 
-\question Escriba un programa que pregunte por un entero, y que imprima los enteros desde este número hasta $10$ más de este. (Si fuera $5$, sería desde $5$ hasta $15$).
+\question Escriba un programa que pregunte por un entero, y que imprima todos los enteros desde este número hasta $10$ más de este. (Si fuera $5$, sería desde $5$ hasta $15$). Asegúrese de separar cada valor de salida por un espacio o tabulador o una nueva línea.
 
 \begin{solution}
 
@@ -209,7 +210,7 @@ printf("See you!\n");
 \question Escriba un programa que solicite un decimal e imprima su cubo.
 
 \begin{solution}
-	
+
 \begin{listing}[H]
 	\footnotesize
 	\inputminted{c}{exercise4_5.c}
@@ -218,7 +219,7 @@ printf("See you!\n");
 \end{listing}
 \end{solution}
 
-\question Use un while loop para convertir el tiempo en minutos a el tiempo en horas y minutos.
+\question Use un \mintinline{c}{while} loop para convertir el tiempo en minutos a el tiempo en horas y minutos.
 
 \begin{solution}
 	
@@ -247,13 +248,27 @@ printf("%d\n", num);
 \end{minted}
 
 \begin{solution}
-	
+
 \begin{listing}[H]
 	\footnotesize
 	\inputminted{c}{exercise4_7.c}
 	\caption{Programa \texttt{exercise4\_7.c}.}
 	\label{lst:4.7}
 \end{listing}
+
+
+Luego de ejecutar el programa, se obtiene en consola el resultado:
+
+\begin{minted}{bash}
+pc@CTIC:~$ x: gcc exercise4_7.c && ./a.out
+%s is a string
+is a string
+1
+1
+2
+1
+\end{minted}
+
 \end{solution}
 
 \question Cambie el programa \texttt{addemup.c} para calcular cuánto dinero ganaría en $20$ días, si recibe $1\$$ el primer día, $2\$$ el segundo, $3\$$ el tercero y así.
@@ -271,7 +286,7 @@ printf("%d\n", num);
 \question Escriba un programa que convierta sus días en semanas y días.
 
 \begin{solution}
-	
+
 \begin{listing}[H]
 	\footnotesize
 	\inputminted{c}{exercise4_9.c}
@@ -290,7 +305,7 @@ printf("%d\n", num);
 \end{enumerate}
 
 \begin{solution}
-	
+
 \begin{listing}[H]
 	\footnotesize
 	\inputminted{c}{exercise4_10.c}
