@@ -67,16 +67,17 @@
 
 \begin{questions}
 
-\question  Si todas las variables son del tipo \mintinline{c}{int}, calcule:
+\question Asuma que todas las variables son del tipo \mintinline{c}{int}. Encuentre el valor de cada una de las siguientes variables:
 
 \begin{parts}
-\part \mintinline{c}{X=(2+3)*6}
-\part \mintinline{c}{X=(12+6)/2*3;}
-\part \mintinline{c}{Y=x=(2+3)/4;}
-\part \mintinline{c}{Y=3+2*(x=7/2);}
+\part \mintinline{c}{x = (2 + 3) * 6;}
+\part \mintinline{c}{x = (12 + 6)/2*3;}
+\part \mintinline{c}{y = x = (2 + 3)/4;}
+\part \mintinline{c}{y = 3 + 2*(x = 7/2);}
 \end{parts}
 
 \begin{solution}
+Si tenemos el siguiente listing~\ref{lst:4.1}, obtendremos para los valores de \mintinline{c}{x} e \mintinline{c}{y}:
 
 \begin{listing}[H]
 	\footnotesize
@@ -84,32 +85,80 @@
 	\caption{Programa \texttt{exercise4\_1.c}.}
 	\label{lst:4.1}
 \end{listing}
+
+
+\begin{multicols}{2}
+\begin{enumerate}[(a)]
+
+\item Imprimirá:
+
+\begin{minted}{bash}
+pc@CTIC:~$ x: 30
+\end{minted}
+
+\item Imprimirá:
+
+\begin{minted}{bash}
+pc@CTIC:~$ x: 27
+\end{minted}
+
+\item Imprimirá:
+
+\begin{minted}{bash}
+pc@CTIC:~$ x: 1    y: 1
+\end{minted}
+
+\item Imprimirá:
+
+\begin{minted}{bash}
+pc@CTIC:~$ x: 3    y: 9
+\end{minted}
+
+\end{enumerate}
+\end{multicols}
+
 \end{solution}
 
-\question Corrija los errores:
+\question Sospechas que hay algunos errores en el siguiente programa. ¿Puede encontrarlos?
 
-\begin{minted}{c}
-main()
+\begin{minted}[linenos]{c}
+int main(void)
 {
-int=1,
-float n;
-scanf();
-printf("watch out! Here come a bunch of fractions!\n");s
-while(i<30)
-n=1/i;
-printf("%f", n);
+	int=1,
+	float n;
+	printf("watch out! Here come a bunch of fractions!\n");
+	while(i<30)
+		n=1/i;
+		printf(" %f", n);
+		
 printf("That's all, folks!\n");
+return;
 }
 \end{minted}
 
 \begin{solution}
+\begin{enumerate}[label={Línea \arabic*:},leftmargin=1.2cm]
+	\item Debe ir la cabecera \mintinline{c}{#include <stdio.h>}.\setcounter{enumi}{2}
+
+	\item Debe acabar en punto y coma, no en coma.
 	
-	\begin{listing}[H]
-		\footnotesize
-		\inputminted{c}{exercise4_2.c}
-		\caption{Programa \texttt{exercise4\_2.c}.}
-		\label{lst:4.2}
-	\end{listing}
+	\item Debe ir una coma, no un punto y coma, entre g y h.
+	
+	\item Debe haber al menos un dígito antes de la \mintinline{c}{e}. Ya sea \mintinline{c}{1e21} o \mintinline{c}{1.0e21} está bien, aunque es bastante grande.
+	
+	\item Bien, al menos en términos de sintaxis.
+	
+	\item Use \}, no ).
+\end{enumerate}
+
+Aquí hay una posible versión correcta:
+
+\begin{listing}[H]
+	\footnotesize
+	\inputminted{c}{exercise4_2.c}
+	\caption{Programa \texttt{exercise4\_2.c}.}
+	\label{lst:4.2}
+\end{listing}
 \end{solution}
 
 \question Hacer un \mintinline{c}{min_sec} interactivo no es fácil. ¿Cómo se puede mejorar?
