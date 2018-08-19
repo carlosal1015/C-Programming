@@ -19,6 +19,8 @@
 #include <stdlib.h>	// ?
 #include <string.h>
 unsigned short int POINTS(unsigned short int, unsigned short int);
+void TABLEGROUP(unsigned short int array[], unsigned short int n);
+
 int main(void)
 {
 	char PER[15], DEN[15], AUS[15], FRA[15];
@@ -64,8 +66,8 @@ int main(void)
 	scanf("%hu", &SCORE3PER);//
 
 	printf("Resultado del partido %s-%s: (0 - 0)\n", DEN, FRA);
-	scanf("%hu", &SCORE3DEN);
-	scanf("%hu", &SCORE3FRA);
+	scanf("%hu", &SCORE3DEN);//0
+	scanf("%hu", &SCORE3FRA);//0
 
 	// Calculando los puntajes
 	POINTSPER = POINTS(SCORE1PER,SCORE1DEN) + POINTS(SCORE2PER,SCORE2FRA) + POINTS(SCORE3PER,SCORE3AUS);
@@ -88,37 +90,20 @@ int main(void)
 	printf("%-15s%-15s%-15s%-15s\n", PER, AUS, DEN, FRA);
 	printf("%-15hu%-15hu%-15hu%-15hu\n\n", SCORE3PER, SCORE3AUS, SCORE3DEN, SCORE3FRA);
 
-	int array[100]= {POINTSPER, POINTSDEN, POINTSAUS, POINTSFRA};
+	//Inserción de los puntos para ordenar la tabla de grupos
 
-	int  n, i, j, swap;
-  n=4;
+	unsigned short int array[100]= {POINTSPER, POINTSDEN, POINTSAUS, POINTSFRA};
 
-  for (i = 0 ; i < ( n - 1 ); i++)
-  {
-    for (j = 0 ; j < n - (i + 1); j++)
-    {
-      if (array[j] < array[j+1]) // For decreasing order use < 
-      {
-        swap       = array[j];
-        array[j]   = array[j+1];
-        array[j+1] = swap;
-      }
-    }
-  }
-
-  printf("Sorted list in ascending order:\n");
-
-  for ( i = 0 ; i < n ; i++ )
-     printf("%d\n", array[i]);
-
-	// Mostrando la tabla acumulada
-	//printf("Tabla acumulada del Grupo C:\n");
-	//printf("%-15s%-15hu%-15s%-15hu%-15s%-15hu%-15s%-15hu\n", PER, POINTSPER, DEN, POINTSDEN, FRA, POINTSFRA, AUS, POINTSFRA);
+ 	printf("Tabla acumulada del grupo C:\n");
+	
+	TABLEGROUP(array, 4);
 
 	return 0;
 }
+
 // Función que calcula los puntos de algún partido.
-unsigned short int POINTS(unsigned short int SCORE1, unsigned short int SCORE2){
+unsigned short int POINTS(unsigned short int SCORE1, unsigned short int SCORE2)
+{
 	if(SCORE1>SCORE2){
 		return 3;
 	}	
@@ -127,4 +112,25 @@ unsigned short int POINTS(unsigned short int SCORE1, unsigned short int SCORE2){
 	}
 	else return 1;
 }
-// Nota: Se puede usar arreglos para cada país.
+
+// Función que muestra la tabla ordenada
+void TABLEGROUP(unsigned short int array[], unsigned short int n)
+{
+   unsigned short int i, j, swap;
+
+   for (i = 0 ; i < ( n - 1 ); i++)
+	{
+		for (j = 0 ; j < n - (i + 1); j++)
+		{
+			if (array[j] < array[j+1])
+			{
+				swap       = array[j];
+				array[j]   = array[j+1];
+				array[j+1] = swap;
+			}
+		}
+	}
+
+	for ( i = 0 ; i < n ; i++ )
+		printf("%hu\n", array[i]);
+}
