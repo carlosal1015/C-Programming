@@ -26,6 +26,7 @@ struct COUNTRY
     unsigned short int SCORE1;
     unsigned short int SCORE2;
     unsigned short int SCORE3;
+    unsigned short int SCOREFINAL;
 } A1, A2, A3, A4, B1, B2, B3, B4, C1, C2, C3, C4, D1, D2, D3, D4, E1, E2, E3, E4, F1, F2, F3, F4, G1, G2, G3, G4, H1, H2, H3, H4;
 
 /*struct GROUP
@@ -47,7 +48,7 @@ int main(void)
     B3.SCORE1 = 0, B3.SCORE2 = 0, B3.SCORE3 = 2;
     B4.SCORE1 = 1, B4.SCORE2 = 0, B4.SCORE3 = 1;
 
-    strcpy(C1.NAME, "France"), strcpy(B2.NAME, "Australia"), strcpy(B3.NAME, "Peru"), strcpy(B4.NAME, "Denmark");
+    strcpy(C1.NAME, "France"), strcpy(C2.NAME, "Australia"), strcpy(C3.NAME, "Peru"), strcpy(C4.NAME, "Denmark");
     C1.SCORE1 = 2, C1.SCORE2 = 1, C2.SCORE3 = 0;
     C2.SCORE1 = 1, C2.SCORE2 = 1, C2.SCORE3 = 0;
     C3.SCORE1 = 0, C3.SCORE2 = 0, C3.SCORE3 = 2;
@@ -83,15 +84,8 @@ int main(void)
     H3.SCORE1 = 1, H3.SCORE2 = 3, H3.SCORE3 = 1;
     H4.SCORE1 = 2, H4.SCORE2 = 2, H4.SCORE3 = 0;
 
-    //printf("%s\n%hu", A1.NAME, A1.SCORE1);
-    
-    char PER[15], DEN[15], AUS[15], FRA[15];
-
-	unsigned short int SCORE1PER, SCORE1DEN, SCORE1AUS, SCORE1FRA;
-	unsigned short int SCORE2PER, SCORE2DEN, SCORE2AUS, SCORE2FRA;
-	unsigned short int SCORE3PER, SCORE3DEN, SCORE3AUS, SCORE3FRA;
-    
-	unsigned short int POINTSPER, POINTSDEN, POINTSAUS, POINTSFRA;
+    /*
+    printf("%s\n%hu", A1.NAME, A1.SCORE1);
 
 	printf("Ingrese el nombre de cada uno de los equipos:\n");
 	printf("El nombre de PER es:\n");
@@ -130,35 +124,210 @@ int main(void)
 	printf("Resultado del partido %s-%s: (0 - 0)\n", DEN, FRA);
 	scanf("%hu", &SCORE3DEN);//0
 	scanf("%hu", &SCORE3FRA);//0
-
+    */
 	// Calculando los puntajes
-	POINTSPER = POINTS(SCORE1PER,SCORE1DEN) + POINTS(SCORE2PER,SCORE2FRA) + POINTS(SCORE3PER,SCORE3AUS);
-	POINTSDEN = POINTS(SCORE1DEN,SCORE1PER) + POINTS(SCORE2DEN,SCORE2AUS) + POINTS(SCORE3DEN,SCORE3FRA);
-	POINTSAUS = POINTS(SCORE1AUS,SCORE1FRA) + POINTS(SCORE2AUS,SCORE2DEN) + POINTS(SCORE3AUS,SCORE3PER);
-	POINTSFRA = POINTS(SCORE1FRA,SCORE1AUS) + POINTS(SCORE2FRA,SCORE2PER) + POINTS(SCORE3FRA,SCORE3DEN);
+	A1.SCOREFINAL = POINTS(A1.SCORE1,A2.SCORE1) + POINTS(A1.SCORE2,A3.SCORE2) + POINTS(A1.SCORE3,A4.SCORE3);
+	A2.SCOREFINAL = POINTS(A2.SCORE1,A1.SCORE1) + POINTS(A2.SCORE2,A4.SCORE2) + POINTS(A2.SCORE3,A3.SCORE3);
+	A3.SCOREFINAL = POINTS(A3.SCORE1,A4.SCORE1) + POINTS(A3.SCORE2,A1.SCORE2) + POINTS(A3.SCORE3,A2.SCORE3);
+	A4.SCOREFINAL = POINTS(A4.SCORE1,A3.SCORE1) + POINTS(A4.SCORE2,A2.SCORE2) + POINTS(A4.SCORE3,A1.SCORE3);
 
-	// Mostrando resultados de cada partido
-	printf("Grupo C:\n\n");
-	
+    B1.SCOREFINAL = POINTS(B1.SCORE1,B2.SCORE1) + POINTS(B1.SCORE2,B3.SCORE2) + POINTS(B1.SCORE3,B4.SCORE3);
+	B2.SCOREFINAL = POINTS(B2.SCORE1,B1.SCORE1) + POINTS(B2.SCORE2,B4.SCORE2) + POINTS(B2.SCORE3,B3.SCORE3);
+	B3.SCOREFINAL = POINTS(B3.SCORE1,B4.SCORE1) + POINTS(B3.SCORE2,B1.SCORE2) + POINTS(B3.SCORE3,B2.SCORE3);
+	B4.SCOREFINAL = POINTS(B4.SCORE1,B3.SCORE1) + POINTS(B4.SCORE2,B2.SCORE2) + POINTS(B4.SCORE3,B1.SCORE3);
+
+	C1.SCOREFINAL = POINTS(C1.SCORE1,C2.SCORE1) + POINTS(C1.SCORE2,C3.SCORE2) + POINTS(C1.SCORE3,C4.SCORE3);
+	C2.SCOREFINAL = POINTS(C2.SCORE1,C1.SCORE1) + POINTS(C2.SCORE2,C4.SCORE2) + POINTS(C2.SCORE3,C3.SCORE3);
+	C3.SCOREFINAL = POINTS(C3.SCORE1,C4.SCORE1) + POINTS(C3.SCORE2,C1.SCORE2) + POINTS(C3.SCORE3,C2.SCORE3);
+	C4.SCOREFINAL = POINTS(C4.SCORE1,C3.SCORE1) + POINTS(C4.SCORE2,C2.SCORE2) + POINTS(C4.SCORE3,C1.SCORE3);
+
+    D1.SCOREFINAL = POINTS(D1.SCORE1,D2.SCORE1) + POINTS(D1.SCORE2,D3.SCORE2) + POINTS(D1.SCORE3,D4.SCORE3);
+	D2.SCOREFINAL = POINTS(D2.SCORE1,D1.SCORE1) + POINTS(D2.SCORE2,D4.SCORE2) + POINTS(D2.SCORE3,D3.SCORE3);
+	D3.SCOREFINAL = POINTS(D3.SCORE1,D4.SCORE1) + POINTS(D3.SCORE2,D1.SCORE2) + POINTS(D3.SCORE3,D2.SCORE3);
+	D4.SCOREFINAL = POINTS(D4.SCORE1,D3.SCORE1) + POINTS(D4.SCORE2,D2.SCORE2) + POINTS(D4.SCORE3,D1.SCORE3);
+
+    E1.SCOREFINAL = POINTS(E1.SCORE1,E2.SCORE1) + POINTS(E1.SCORE2,E3.SCORE2) + POINTS(E1.SCORE3,E4.SCORE3);
+	E2.SCOREFINAL = POINTS(E2.SCORE1,E1.SCORE1) + POINTS(E2.SCORE2,E4.SCORE2) + POINTS(E2.SCORE3,E3.SCORE3);
+	E3.SCOREFINAL = POINTS(E3.SCORE1,E4.SCORE1) + POINTS(E3.SCORE2,E1.SCORE2) + POINTS(E3.SCORE3,E2.SCORE3);
+	E4.SCOREFINAL = POINTS(E4.SCORE1,E3.SCORE1) + POINTS(E4.SCORE2,E2.SCORE2) + POINTS(E4.SCORE3,E1.SCORE3);
+
+    F1.SCOREFINAL = POINTS(F1.SCORE1,F2.SCORE1) + POINTS(F1.SCORE2,F3.SCORE2) + POINTS(F1.SCORE3,F4.SCORE3);
+	F2.SCOREFINAL = POINTS(F2.SCORE1,F1.SCORE1) + POINTS(F2.SCORE2,F4.SCORE2) + POINTS(F2.SCORE3,F3.SCORE3);
+	F3.SCOREFINAL = POINTS(F3.SCORE1,F4.SCORE1) + POINTS(F3.SCORE2,F1.SCORE2) + POINTS(F3.SCORE3,F2.SCORE3);
+	F4.SCOREFINAL = POINTS(F4.SCORE1,F3.SCORE1) + POINTS(F4.SCORE2,F2.SCORE2) + POINTS(F4.SCORE3,F1.SCORE3);
+
+    G1.SCOREFINAL = POINTS(G1.SCORE1,G2.SCORE1) + POINTS(G1.SCORE2,G3.SCORE2) + POINTS(G1.SCORE3,G4.SCORE3);
+	G2.SCOREFINAL = POINTS(G2.SCORE1,G1.SCORE1) + POINTS(G2.SCORE2,G4.SCORE2) + POINTS(G2.SCORE3,G3.SCORE3);
+	G3.SCOREFINAL = POINTS(G3.SCORE1,G4.SCORE1) + POINTS(G3.SCORE2,G1.SCORE2) + POINTS(G3.SCORE3,G2.SCORE3);
+	G4.SCOREFINAL = POINTS(G4.SCORE1,G3.SCORE1) + POINTS(G4.SCORE2,G2.SCORE2) + POINTS(G4.SCORE3,G1.SCORE3);
+
+    H1.SCOREFINAL = POINTS(H1.SCORE1,H2.SCORE1) + POINTS(H1.SCORE2,H3.SCORE2) + POINTS(H1.SCORE3,H4.SCORE3);
+	H2.SCOREFINAL = POINTS(H2.SCORE1,H1.SCORE1) + POINTS(H2.SCORE2,H4.SCORE2) + POINTS(H2.SCORE3,H3.SCORE3);
+	H3.SCOREFINAL = POINTS(H3.SCORE1,H4.SCORE1) + POINTS(H3.SCORE2,H1.SCORE2) + POINTS(H3.SCORE3,H2.SCORE3);
+	H4.SCOREFINAL = POINTS(H4.SCORE1,H3.SCORE1) + POINTS(H4.SCORE2,H2.SCORE2) + POINTS(H4.SCORE3,H1.SCORE3);
+
+    // Mostrando resultados de cada partido
+	printf("Grupo A:\n\n");
+
 	printf("Primera fecha:\n\n");
-	printf("%-15s%-15s%-15s%-15s\n", PER, DEN, FRA, AUS);
-	printf("%-15hu%-15hu%-15hu%-15hu\n\n", SCORE1PER, SCORE1DEN, SCORE1FRA, SCORE1AUS);
+	printf("%-15s%-15s%-15s%-15s\n", A1.NAME, A2.NAME, A3.NAME, A4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", A1.SCORE1, A2.SCORE1, A3.SCORE1, A4.SCORE1);
 
 	printf("Segunda fecha:\n\n");
-	printf("%-15s%-15s%-15s%-15s\n", PER, FRA, DEN, AUS);
-	printf("%-15hu%-15hu%-15hu%-15hu\n\n", SCORE2PER, SCORE2FRA, SCORE2DEN, SCORE2AUS);
+	printf("%-15s%-15s%-15s%-15s\n", A1.NAME, A3.NAME, A2.NAME, A4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", A1.SCORE2, A3.SCORE2, A2.SCORE2, A4.SCORE2);
 
 	printf("Tercera fecha:\n\n");
-	printf("%-15s%-15s%-15s%-15s\n", PER, AUS, DEN, FRA);
-	printf("%-15hu%-15hu%-15hu%-15hu\n\n", SCORE3PER, SCORE3AUS, SCORE3DEN, SCORE3FRA);
+	printf("%-15s%-15s%-15s%-15s\n", A1.NAME, A4.NAME, A2.NAME, A3.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", A1.SCORE3, A4.SCORE3, A2.SCORE3, A3.SCORE3);
 
 	//Inserción de los puntos para ordenar la tabla de grupos
 
-	unsigned short int array[100]= {POINTSPER, POINTSDEN, POINTSAUS, POINTSFRA};
+	unsigned short int arrayA[100]= {A1.SCOREFINAL, A2.SCOREFINAL, A3.SCOREFINAL, A4.SCOREFINAL};
+
+ 	printf("Tabla acumulada del grupo A:\n");
+
+	TABLEGROUP(arrayA, 4);
+
+    printf("Grupo B:\n\n");
+
+	printf("Primera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", B1.NAME, B2.NAME, B3.NAME, B4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", B1.SCORE1, B2.SCORE1, B3.SCORE1, B4.SCORE1);
+
+	printf("Segunda fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", B1.NAME, B3.NAME, B2.NAME, B4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", B1.SCORE2, B3.SCORE2, B2.SCORE2, B4.SCORE2);
+
+	printf("Tercera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", B1.NAME, B4.NAME, B2.NAME, B3.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", B1.SCORE3, B4.SCORE3, B2.SCORE3, B3.SCORE3);
+
+	unsigned short int arrayB[100]= {B1.SCOREFINAL, B2.SCOREFINAL, B3.SCOREFINAL, B4.SCOREFINAL};
+
+ 	printf("Tabla acumulada del grupo B:\n");
+
+	TABLEGROUP(arrayB, 4);
+
+    printf("Grupo C:\n\n");
+
+	printf("Primera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", C1.NAME, C2.NAME, C3.NAME, C4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", C1.SCORE1, C2.SCORE1, C3.SCORE1, C4.SCORE1);
+
+	printf("Segunda fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", C1.NAME, C3.NAME, C2.NAME, C4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", C1.SCORE2, C3.SCORE2, C2.SCORE2, C4.SCORE2);
+
+	printf("Tercera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", C1.NAME, C4.NAME, C2.NAME, C3.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", C1.SCORE3, C4.SCORE3, C2.SCORE3, C3.SCORE3);
+
+	unsigned short int arrayC[100]= {C1.SCOREFINAL, C2.SCOREFINAL, C3.SCOREFINAL, C4.SCOREFINAL};
 
  	printf("Tabla acumulada del grupo C:\n");
-	
-	TABLEGROUP(array, 4);
+
+	TABLEGROUP(arrayC, 4);
+
+    printf("Grupo D:\n\n");
+
+	printf("Primera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", D1.NAME, D2.NAME, D3.NAME, D4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", D1.SCORE1, D2.SCORE1, D3.SCORE1, D4.SCORE1);
+
+	printf("Segunda fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", D1.NAME, D3.NAME, D2.NAME, D4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", D1.SCORE2, D3.SCORE2, D2.SCORE2, D4.SCORE2);
+
+	printf("Tercera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", D1.NAME, D4.NAME, D2.NAME, D3.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", D1.SCORE3, D4.SCORE3, D2.SCORE3, D3.SCORE3);
+
+	unsigned short int arrayD[100]= {D1.SCOREFINAL, D2.SCOREFINAL, D3.SCOREFINAL, D4.SCOREFINAL};
+
+ 	printf("Tabla acumulada del grupo D:\n");
+
+	TABLEGROUP(arrayD, 4);
+
+    printf("Grupo E:\n\n");
+
+	printf("Primera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", E1.NAME, E2.NAME, E3.NAME, E4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", E1.SCORE1, E2.SCORE1, E3.SCORE1, E4.SCORE1);
+
+	printf("Segunda fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", E1.NAME, E3.NAME, E2.NAME, E4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", E1.SCORE2, E3.SCORE2, E2.SCORE2, E4.SCORE2);
+
+	printf("Tercera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", E1.NAME, E4.NAME, E2.NAME, E3.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", E1.SCORE3, E4.SCORE3, E2.SCORE3, E3.SCORE3);
+
+	unsigned short int arrayE[100]= {E1.SCOREFINAL, E2.SCOREFINAL, E3.SCOREFINAL, E4.SCOREFINAL};
+
+ 	printf("Tabla acumulada del grupo E:\n");
+
+	TABLEGROUP(arrayE, 4);
+
+    printf("Grupo F:\n\n");
+
+	printf("Primera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", F1.NAME, F2.NAME, F3.NAME, F4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", F1.SCORE1, F2.SCORE1, F3.SCORE1, F4.SCORE1);
+
+	printf("Segunda fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", F1.NAME, F3.NAME, F2.NAME, F4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", F1.SCORE2, F3.SCORE2, F2.SCORE2, F4.SCORE2);
+
+	printf("Tercera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", F1.NAME, F4.NAME, F2.NAME, F3.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", F1.SCORE3, F4.SCORE3, F2.SCORE3, F3.SCORE3);
+
+	unsigned short int arrayF[100]= {F1.SCOREFINAL, F2.SCOREFINAL, F3.SCOREFINAL, F4.SCOREFINAL};
+
+ 	printf("Tabla acumulada del grupo F:\n");
+
+	TABLEGROUP(arrayF, 4);
+
+    printf("Grupo G:\n\n");
+
+	printf("Primera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", G1.NAME, G2.NAME, G3.NAME, G4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", G1.SCORE1, G2.SCORE1, G3.SCORE1, G4.SCORE1);
+
+	printf("Segunda fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", G1.NAME, G3.NAME, G2.NAME, G4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", G1.SCORE2, G3.SCORE2, G2.SCORE2, G4.SCORE2);
+
+	printf("Tercera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", G1.NAME, G4.NAME, G2.NAME, G3.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", G1.SCORE3, G4.SCORE3, G2.SCORE3, G3.SCORE3);
+
+	unsigned short int arrayG[100]= {G1.SCOREFINAL, G2.SCOREFINAL, G3.SCOREFINAL, G4.SCOREFINAL};
+
+ 	printf("Tabla acumulada del grupo G:\n");
+
+	TABLEGROUP(arrayG, 4);
+
+    printf("Grupo H:\n\n");
+
+	printf("Primera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", H1.NAME, H2.NAME, H3.NAME, H4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", H1.SCORE1, H2.SCORE1, H3.SCORE1, H4.SCORE1);
+
+	printf("Segunda fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", H1.NAME, H3.NAME, H2.NAME, H4.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", H1.SCORE2, H3.SCORE2, H2.SCORE2, H4.SCORE2);
+
+	printf("Tercera fecha:\n\n");
+	printf("%-15s%-15s%-15s%-15s\n", H1.NAME, H4.NAME, H2.NAME, H3.NAME);
+	printf("%-15hu%-15hu%-15hu%-15hu\n\n", H1.SCORE3, H4.SCORE3, H2.SCORE3, H3.SCORE3);
+
+	unsigned short int arrayH[100]= {H1.SCOREFINAL, H2.SCOREFINAL, H3.SCOREFINAL, H4.SCOREFINAL};
+
+ 	printf("Tabla acumulada del grupo E:\n");
+
+	TABLEGROUP(arrayH, 4);
 
 	return 0;
 }
@@ -168,7 +337,7 @@ unsigned short int POINTS(unsigned short int SCORE1, unsigned short int SCORE2)
 {
 	if(SCORE1>SCORE2){
 		return 3;
-	}	
+	}
 	else if(SCORE1<SCORE2){
 		return 0;
 	}
